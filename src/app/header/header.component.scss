@@ -1,0 +1,129 @@
+.profile-img{
+  width: auto;
+  max-width: 130%;
+  max-height: 400px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  z-index: -1;
+}
+
+.background-image {
+  overflow: hidden;
+  text-align: center;
+  width: fit-content;
+  margin-right: auto;
+  margin-left: auto;
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.0) 0%,
+      rgba(0, 0, 0, 0.0) 60%,
+      // These three 'smooth' out the fade.
+      rgba(0, 0, 0, 0.2) 80%,
+      rgba(0, 0, 0, 0.7) 90%,
+      rgba(0, 0, 0, 0.9) 95%,
+      // Solid to match the background.
+      rgba(0, 0, 0, 1.0) 100%
+  );
+}
+
+.title-div{
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -130px;
+  max-width: 600px;
+}
+
+.follow-button:hover {
+  width: 113px;
+  height: 33px;
+  margin-left: 9px;
+  margin-top: -1px;
+}
+.follow-button{
+  margin-left: auto;
+  margin-right: auto;
+  width: 110px;
+  height: 30px;
+  display: block;
+  border: 1px solid;
+  border-color: #FFFFFF;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  border-radius: 20px;
+  color: var(--color-text);
+  background-color: rgba(0,0,0,0.1);
+}
+
+.play-button:hover {
+  width: 113px;
+  height: 33px;
+  margin-top: -1px;
+}
+
+.head-buttons-grid{
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 260px;
+  position: sticky;
+  position: -webkit-sticky;
+  display: grid;
+  align-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+}
+.button-text{
+  margin-top: -3px;
+}
+.play-button{
+  margin-left: auto;
+  margin-right: auto;
+  width: 110px;
+  height: 30px;
+  display: block;
+  border: 1px solid var(--color-primary);
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  border-radius: 20px;
+  color: var(--color-text);
+  background-color: var(--color-primary);
+}
+.title-name{
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+  text-align: center;
+  width: 300px;
+  display: block;
+  font-size: 35px;
+  font-max-size: 7vw;
+  font-weight: bold;
+}
+.monthly-span{
+  margin-left: auto;
+  margin-right: auto;
+  width: 300px;
+  font-size: 12px;
+  text-align: center;
+  color: var(--color-light);
+  margin-bottom: 10px;
+}
+.more-icon{
+  font-size: 2rem;
+  text-align: center;
+  margin-left: -9px;
+  margin-top: -10px;
+}
+.more-button{
+  display: block;
+  margin-top: 10px;
+  margin-bottom: -50px;
+  float: right;
+  margin-right: 4vmax;
+  border-color: #FFFFFF;
+  border: 1px solid;
+  color: var(--color-text);
+  background-color: rgba(0,0,0,0.3);
+}
