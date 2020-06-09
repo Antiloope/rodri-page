@@ -13,13 +13,15 @@ import {MatListModule} from '@angular/material/list';
 import {MatRippleModule} from '@angular/material/core';
 import {MatDividerModule} from "@angular/material/divider";
 import { ContactComponent } from './contact/contact.component';
+import { AlbumsComponent } from './albums/albums.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     TopFiveComponent,
-    ContactComponent
+    ContactComponent,
+    AlbumsComponent
   ],
   imports: [
     BrowserModule,
