@@ -39,8 +39,10 @@
 .follow-button:hover {
   width: 113px;
   height: 33px;
+  padding-top: 2px;
   margin-left: 9px;
-  margin-top: -1px;
+  margin-top: -2px;
+  margin-bottom: -1px;
 }
 .follow-button{
   margin-left: auto;
@@ -61,7 +63,10 @@
 .play-button:hover {
   width: 113px;
   height: 33px;
-  margin-top: -1px;
+  padding-top: 2px;
+  filter: brightness(120%);
+  margin-top: -2px;
+  margin-bottom: -1px;
 }
 
 .head-buttons-grid{
