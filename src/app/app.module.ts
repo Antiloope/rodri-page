@@ -12,12 +12,14 @@ import { TopFiveComponent } from './top-five/top-five.component';
 import {MatListModule} from '@angular/material/list';
 import {MatRippleModule} from '@angular/material/core';
 import {MatDividerModule} from "@angular/material/divider";
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    TopFiveComponent
+    TopFiveComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,

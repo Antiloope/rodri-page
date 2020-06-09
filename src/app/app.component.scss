@@ -1,0 +1,12 @@
+.content-grid{
+  display: grid;
+}
+@media (min-width: 900px) {
+  .content-grid {
+    grid-template-columns: 500px 300px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 800px;
+  }
+}
+
