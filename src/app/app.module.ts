@@ -38,6 +38,7 @@ import { PlaylistsComponent } from './playlists/playlists.component';
     MatListModule,
     MatRippleModule,
     MatDividerModule,
+    OwlModule
   ],
   providers: [],
   bootstrap: [AppComponent]

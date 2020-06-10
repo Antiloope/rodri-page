@@ -18,7 +18,13 @@ export class AlbumsComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+  mySlideOptions={
+    autoWidth:true,
+    dots: false,
+    nav: false,
+    lazyLoad: true,
+    margin:20,
+  };
   albums: Album[] = [
     {
       image: "assets/studies.jpg",

@@ -1,11 +1,15 @@
 <div class="title-div">
   Albums
-  <div class="albums-grid">
-    <div *ngFor="let album of albums" class="album-container">
-      <img src="{{album.image}}" class="album-image">
-      <img src="assets/play.png" class="play-image">
-      <div class="album-title">{{album.title}}</div>
-      <div class="album-subtitle">{{album.subtitle}}</div>
-    </div>
+  <div class="album-carousel">
+    <owl-carousel [options]="mySlideOptions" [carouselClasses]="['owl-theme', 'sliding']" >
+      <div class="item" *ngFor="let album of albums;let i = index">
+        <div class="album-container-div">
+          <img src="{{album.image}}" class="album-image">
+          <img src="assets/play.png" class="play-image">
+          <div class="album-title">{{album.title}}</div>
+          <div class="album-subtitle">{{album.subtitle}}</div>
+        </div>
+      </div>
+    </owl-carousel>
   </div>
 </div>
