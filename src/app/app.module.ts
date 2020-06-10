@@ -14,6 +14,7 @@ import {MatRippleModule} from '@angular/material/core';
 import {MatDividerModule} from "@angular/material/divider";
 import { ContactComponent } from './contact/contact.component';
 import { AlbumsComponent } from './albums/albums.component';
+import { AboutComponent } from './about/about.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { AlbumsComponent } from './albums/albums.component';
     HeaderComponent,
     TopFiveComponent,
     ContactComponent,
-    AlbumsComponent
+    AlbumsComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
