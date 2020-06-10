@@ -18,6 +18,22 @@
 .album-container{
   margin-bottom: 15px;
 }
+
+.play-image:hover {
+  z-index: 1;
+}
+.play-image{
+  height: 80px;
+  width: 80px;
+  position: absolute;
+  margin-top: 55px;
+  margin-left: -130px;
+  z-index: -1;
+}
+
+.album-image:hover{
+  opacity: 0.5;
+}
 .album-image{
   height: 170px;
   width: 170px;
