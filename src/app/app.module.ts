@@ -15,6 +15,8 @@ import {MatDividerModule} from "@angular/material/divider";
 import { ContactComponent } from './contact/contact.component';
 import { AlbumsComponent } from './albums/albums.component';
 import { AboutComponent } from './about/about.component';
+import { OwlModule } from 'ngx-owl-carousel';
+import { PlaylistsComponent } from './playlists/playlists.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +25,8 @@ import { AboutComponent } from './about/about.component';
     TopFiveComponent,
     ContactComponent,
     AlbumsComponent,
-    AboutComponent
+    AboutComponent,
+    PlaylistsComponent
   ],
   imports: [
     BrowserModule,
