@@ -1,7 +1,7 @@
 <div class="title-div">
   Popular
   <ul class="exp-list">
-    <li *ngFor="let exp of experiences" class="exp-holder">
+    <li *ngFor="let exp of experiences" class="exp-holder" routerLink="/song/{{exp.id}}" routerLinkActive="active">
       <img src="{{exp.image}}" class="exp-image">
       <div class="exp-id">{{exp.id}}</div>
       <div class="exp-name">{{exp.name}}</div>

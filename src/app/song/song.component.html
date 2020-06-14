@@ -1,0 +1,11 @@
+<div [@openClose]="isOpen ? 'open' : 'closed'" class="div-box" id="song">
+  <div class="song-container">
+    <button mat-mini-fab class="more-button">
+      <mat-icon class="more-icon">more_vert</mat-icon>
+    </button>
+    <button mat-mini-fab class="minimize-button" (click)="toggle()">
+      <mat-icon class="more-icon">expand_more</mat-icon>
+    </button>
+    <h1 class="title">{{currentSong.name.toUpperCase()}}</h1>
+  </div>
+</div>

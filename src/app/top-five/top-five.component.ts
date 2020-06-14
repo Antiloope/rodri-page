@@ -1,11 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
-export interface Experience {
-  id: number;
-  name: string;
-  duration: string;
-  image: string;
-}
+import {Song, songs} from "../app.component";
 
 @Component({
   selector: 'app-top-five',
@@ -20,25 +14,5 @@ export class TopFiveComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  experiences: Experience[] = [
-    {
-      id: 1,
-      name: "Siges",
-      image: "assets/siges.png",
-      duration: "2019 (July) - today"
-    },
-    {
-      id: 2,
-      name: "School support classes",
-      image: "assets/school.png",
-      duration: "2018 - today"
-    },
-    {
-      id: 3,
-      name: "Internship in Pentacom",
-      image: "assets/pentacom.png",
-      duration: "2016 (3 months)"
-    },
-  ];
-
+  experiences:Song[] = songs;
 }

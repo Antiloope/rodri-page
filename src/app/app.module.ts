@@ -17,6 +17,12 @@ import { AlbumsComponent } from './albums/albums.component';
 import { AboutComponent } from './about/about.component';
 import { OwlModule } from 'ngx-owl-carousel';
 import { PlaylistsComponent } from './playlists/playlists.component';
+import { Routes, RouterModule } from '@angular/router';
+import { SongComponent } from './song/song.component';
+
+const routes: Routes = [
+  { path: 'song/:id', component: SongComponent },
+];
 
 @NgModule({
   declarations: [
@@ -26,7 +32,8 @@ import { PlaylistsComponent } from './playlists/playlists.component';
     ContactComponent,
     AlbumsComponent,
     AboutComponent,
-    PlaylistsComponent
+    PlaylistsComponent,
+    SongComponent
   ],
   imports: [
     BrowserModule,
@@ -38,8 +45,10 @@ import { PlaylistsComponent } from './playlists/playlists.component';
     MatListModule,
     MatRippleModule,
     MatDividerModule,
-    OwlModule
+    OwlModule,
+    RouterModule.forRoot(routes)
   ],
+  exports:[RouterModule],
   providers: [],
   bootstrap: [AppComponent]
 })

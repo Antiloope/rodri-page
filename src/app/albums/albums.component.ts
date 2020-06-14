@@ -1,11 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
-export interface Album {
-  image: string;
-  route: string;
-  title: string;
-  subtitle: string;
-}
+import {albums,Album} from "../app.component";
 
 @Component({
   selector: 'app-albums',
@@ -25,43 +19,7 @@ export class AlbumsComponent implements OnInit {
     lazyLoad: true,
     margin:20,
   };
-  albums: Album[] = [
-    {
-      image: "assets/studies.jpg",
-      route: "album1",
-      title: "Studies",
-      subtitle: "All my studies",
-    },
-    {
-      image: "assets/studies.jpg",
-      route: "album1",
-      title: "Studies",
-      subtitle: "All my studies",
-    },
-    {
-      image: "assets/studies.jpg",
-      route: "album1",
-      title: "Studies",
-      subtitle: "All my studies",
-    },
-    {
-      image: "assets/studies.jpg",
-      route: "album1",
-      title: "Studies",
-      subtitle: "All my studies",
-    },
-    {
-      image: "assets/studies.jpg",
-      route: "album1",
-      title: "Studies",
-      subtitle: "All my studies",
-    },
-    {
-      image: "assets/studies.jpg",
-      route: "album1",
-      title: "Studies",
-      subtitle: "All my studies",
-    },
-  ]
+
+  _albums: Album[] = albums;
 
 }

@@ -2,7 +2,7 @@
   Albums
   <div class="album-carousel">
     <owl-carousel [options]="mySlideOptions" [carouselClasses]="['owl-theme', 'sliding']" >
-      <div class="item" *ngFor="let album of albums;let i = index">
+      <div class="item" *ngFor="let album of _albums;let i = index">
         <div class="album-container-div">
           <img src="{{album.image}}" class="album-image">
           <img src="assets/play.png" class="play-image">

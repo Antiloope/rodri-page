@@ -1,0 +1,49 @@
+.div-box{
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left:0;
+  right:0;
+  top:10px;
+  width: 100%;
+  min-height: 100vh;
+  margin-top: 0;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.song-container{
+  position: sticky;
+  top: -10px;
+  color: #FFFFFF;
+  background-color: var(--color-background);
+  height: 100vh;
+}
+.more-icon{
+  font-size: 2rem;
+  text-align: center;
+  margin-left: -9px;
+  margin-top: -10px;
+}
+.minimize-button{
+  display: block;
+  margin-top: 10px;
+  float: left;
+  margin-left: 2vmax;
+  color: var(--color-text);
+  background-color: rgba(0,0,0,0.0);
+}
+.more-button{
+  display: block;
+  margin-top: 10px;
+  float: right;
+  margin-right: 2vmax;
+  color: var(--color-text);
+  background-color: rgba(0,0,0,0.0);
+}
+.title{
+  margin-top: 0;
+  padding-top: 12px;
+  font-size: 17px;
+  font-weight: lighter;
+}
