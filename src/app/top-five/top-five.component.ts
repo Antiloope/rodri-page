@@ -24,7 +24,7 @@ export class TopFiveComponent implements OnInit {
     {
       id: 1,
       name: "Siges",
-      image: "assets/siges.jpg",
+      image: "assets/siges.png",
       duration: "2019 (July) - today"
     },
     {
