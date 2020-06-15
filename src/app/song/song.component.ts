@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {trigger,state,style,transition,animate,sequence} from '@angular/animations';
 import {ActivatedRoute, Router} from '@angular/router';
-import {Song, songs,Album,albums} from "../app.component";
+import {Song, songs, Album, albums, lang} from "../app.component";
 
 @Component({
   selector: 'app-song',
@@ -45,8 +45,16 @@ export class SongComponent implements OnInit {
   constructor(private router: Router,private route:ActivatedRoute) { }
 
   currentSong;
+  langId:number;
+  texts:any=[
+  ]
 
   ngOnInit(): void {
+    if (lang.split('_')[0]==='es'){
+      this.langId=1;
+    }else{
+      this.langId=0;
+    }
     this.toggle();
     this.route.paramMap.subscribe(params => {
       this.currentSong = songs.find(exp => exp.id===+params.get('id'));

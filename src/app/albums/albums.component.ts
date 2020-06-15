@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {albums,Album} from "../app.component";
+import {albums, Album, lang} from "../app.component";
 
 @Component({
   selector: 'app-albums',
@@ -10,7 +10,17 @@ export class AlbumsComponent implements OnInit {
 
   constructor() { }
 
+  langId:number;
+  texts:any=[
+    ["Albums","Albums"],
+  ]
+
   ngOnInit(): void {
+    if (lang.split('_')[0]==='es'){
+      this.langId=1;
+    }else{
+      this.langId=0;
+    }
   }
   mySlideOptions={
     autoWidth:true,

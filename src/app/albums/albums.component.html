@@ -1,13 +1,13 @@
 <div class="div-box">
-  Albums
+  {{texts[0][langId]}}
   <div class="album-carousel">
     <owl-carousel [options]="mySlideOptions" [carouselClasses]="['owl-theme', 'sliding']" >
       <div class="item" *ngFor="let album of _albums;let i = index">
         <div class="album-container-div">
           <img src="{{album.image}}" class="album-image">
           <img src="assets/play.png" class="play-image">
-          <div class="album-title">{{album.title}}</div>
-          <div class="album-subtitle">{{album.subtitle}}</div>
+          <div class="album-title">{{album.title[langId]}}</div>
+          <div class="album-subtitle">{{album.subtitle[langId]}}</div>
         </div>
       </div>
     </owl-carousel>

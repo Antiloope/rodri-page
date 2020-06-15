@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {Song, songs} from "../app.component";
+import {lang, Song, songs} from "../app.component";
 
 @Component({
   selector: 'app-top-five',
@@ -11,7 +11,17 @@ export class TopFiveComponent implements OnInit {
   constructor() {
   }
 
+  langId:number;
+  texts:any=[
+    ["Popular","Popular"],
+  ]
+
   ngOnInit(): void {
+    if (lang.split('_')[0]==='es'){
+      this.langId=1;
+    }else{
+      this.langId=0;
+    }
   }
 
   experiences:Song[] = songs;

@@ -1,11 +1,11 @@
 <div class="title-div">
-  Popular
+  {{texts[0][langId]}}
   <ul class="exp-list">
     <li *ngFor="let exp of experiences" class="exp-holder" routerLink="/song/{{exp.id}}" routerLinkActive="active">
       <img src="{{exp.image}}" class="exp-image">
       <div class="exp-id">{{exp.id}}</div>
-      <div class="exp-name">{{exp.name}}</div>
-      <div class="exp-duration">{{exp.duration}}</div>
+      <div class="exp-name">{{exp.name[langId]}}</div>
+      <div class="exp-duration">{{exp.duration[langId]}}</div>
     </li>
   </ul>
 </div>

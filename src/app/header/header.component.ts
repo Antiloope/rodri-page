@@ -1,4 +1,5 @@
 import {Component, HostListener, OnInit} from '@angular/core';
+import {lang} from "../app.component";
 
 @Component({
   selector: 'app-header',
@@ -8,7 +9,19 @@ import {Component, HostListener, OnInit} from '@angular/core';
 export class HeaderComponent implements OnInit {
   constructor() {}
 
+  langId:number;
+  texts:any=[
+    ["MONTHLY LISTENERS","OYENTES MENSUALES"],
+    ["FOLLOW","SEGUIR"],
+    ["FOLLOWING","SIGUIENDO"]
+  ]
+
   ngOnInit(): void {
+    if (lang.split('_')[0]==='es'){
+      this.langId=1;
+    }else{
+      this.langId=0;
+    }
   }
 
   @HostListener("window:scroll", ['$event'])

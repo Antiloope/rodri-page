@@ -1,9 +1,9 @@
 <div class="title-div">
-  Contact
+  {{texts[0][langId]}}
   <ul class="cont-list">
     <a href="{{cont.href}}" *ngFor="let cont of contact" class="cont-holder">
       <img src="{{cont.image}}" class="cont-image">
-      <div class="cont-name">{{cont.name}}</div>
+      <div class="cont-name">{{cont.name[langId]}}</div>
     </a>
   </ul>
 </div>
