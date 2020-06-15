@@ -19,6 +19,7 @@ import { OwlModule } from 'ngx-owl-carousel';
 import { PlaylistsComponent } from './playlists/playlists.component';
 import { Routes, RouterModule } from '@angular/router';
 import { SongComponent } from './song/song.component';
+import {MatSliderModule} from "@angular/material/slider";
 
 const routes: Routes = [
   { path: 'song/:id', component: SongComponent },
@@ -45,6 +46,7 @@ const routes: Routes = [
     MatListModule,
     MatRippleModule,
     MatDividerModule,
+    MatSliderModule,
     OwlModule,
     RouterModule.forRoot(routes)
   ],

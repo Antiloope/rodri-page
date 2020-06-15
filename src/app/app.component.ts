@@ -69,7 +69,7 @@ export const songs:Song[] = [
     name: "Siges",
     image: "assets/siges.png",
     duration: "2019 (July) - today",
-    description: "mvapifovmsijn caojina oicaoiwcn ipajcn oiawjciepowicapokcm wap ocmpawock mjco k mcpo"
+    description: "I worked in Siges as developer of different solutions. Implementing .NET web APIs, services to manage dispenser controllers, FTP integration solution in C#"
   },
   {
     id: 2,

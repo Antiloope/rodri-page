@@ -44,12 +44,13 @@ export class SongComponent implements OnInit {
   }
   constructor(private router: Router,private route:ActivatedRoute) { }
 
-  currentSong:Song;
+  currentSong;
 
   ngOnInit(): void {
     this.toggle();
     this.route.paramMap.subscribe(params => {
       this.currentSong = songs.find(exp => exp.id===+params.get('id'));
+      this.currentSong.album = albums.find(al => al.id===this.currentSong.id);
     })
   }
 }

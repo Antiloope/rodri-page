@@ -6,6 +6,27 @@
     <button mat-mini-fab class="minimize-button" (click)="toggle()">
       <mat-icon class="more-icon">expand_more</mat-icon>
     </button>
-    <h1 class="title">{{currentSong.name.toUpperCase()}}</h1>
+    <h1 class="song-title">{{currentSong.name.toUpperCase()}}</h1>
+    <h1 class="album-title">{{currentSong.album.title.toUpperCase()}}</h1>
+    <div class="description-container">
+      <p class="description">{{currentSong.description}}</p>
+      <img src="{{currentSong.album.image}}" class="background-image">
+    </div>
+    <div class="song-footer">
+      <i class="like-icon far fa-heart fa-lg"></i>
+      <div class="footer-song-title">{{currentSong.name}}</div>
+      <div class="footer-song-artist">Rodrigo Pizarro</div>
+      <div class="footer-duration-left">{{currentSong.duration.split('-')[0]}}</div>
+      <div class="footer-duration-right">{{currentSong.duration.split('-')[1]}}</div>
+      <input type="range" min="1" max="100" value="20" class="slider" id="myRange">
+      <div class="icons">
+        <i class="icon fas fa-random fa-lg"></i>
+        <i class="icon fas fa-step-backward fa-2x"></i>
+        <i class="icon fas fa-play-circle fa-4x"></i>
+        <i class="icon fas fa-step-forward fa-2x"></i>
+        <i class="icon fas fa-retweet fa-lg"></i>
+      </div>
+
+    </div>
   </div>
 </div>
