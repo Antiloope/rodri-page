@@ -22,7 +22,7 @@ export class ContactComponent implements OnInit {
   ]
 
   ngOnInit(): void {
-    if (lang.split('_')[0]==='es'){
+    if (lang.split('-')[0]==='es'){
       this.langId=1;
     }else{
       this.langId=0;
