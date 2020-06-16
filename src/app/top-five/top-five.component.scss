@@ -59,3 +59,21 @@
   height: 40px;
   width: 40px;
 }
+
+@media (max-width: 480px) {
+  .exp-name{
+    font-size: 13px;
+    padding-top: 8px;
+  }
+  .exp-duration{
+    font-size: 13px;
+    padding-top: 8px;
+  }
+  .exp-image{
+    height: 35px;
+    width: 35px;
+  }
+  .exp-id{
+    padding-top: 8px;
+  }
+}
