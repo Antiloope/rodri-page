@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {lang, Song, songs} from "../app.component";
+import {range} from "rxjs";
 
 @Component({
   selector: 'app-top-five',
@@ -22,7 +23,12 @@ export class TopFiveComponent implements OnInit {
     }else{
       this.langId=0;
     }
+    for (let i = 1; i < 6; i++){
+      let tmp = songs.find(song => song.id === i);
+      if (tmp) this.experiences.push(tmp);
+      else break;
+    }
   }
 
-  experiences:Song[] = songs;
+  experiences:Song[] = [];
 }
