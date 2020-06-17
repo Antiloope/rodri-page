@@ -1,7 +1,7 @@
 <div [@openClose]="isOpen ? 'open' : 'closed'" class="div-box" id="song">
   <div class="song-container">
-    <button mat-mini-fab class="more-button">
-      <mat-icon class="more-icon">more_vert</mat-icon>
+    <button mat-mini-fab class="more-button" (click)="copyToClipboard()">
+      <mat-icon class="more-icon">share</mat-icon>
     </button>
     <button mat-mini-fab class="minimize-button" (click)="toggle()">
       <mat-icon class="more-icon">expand_more</mat-icon>
@@ -30,3 +30,4 @@
     </div>
   </div>
 </div>
+

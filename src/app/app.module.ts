@@ -48,7 +48,7 @@ const routes: Routes = [
     MatDividerModule,
     MatSliderModule,
     OwlModule,
-    RouterModule.forRoot(routes)
+    RouterModule.forRoot(routes),
   ],
   exports:[RouterModule],
   providers: [],
