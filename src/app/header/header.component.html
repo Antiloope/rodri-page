@@ -12,8 +12,8 @@
     <button mat-flat-button class="play-button">
       <div class="button-text">PLAY</div>
     </button>
-    <button mat-flat-button class="follow-button">
-      <div class="button-text">{{texts[1][langId]}}</div>
+    <button mat-flat-button class="follow-button" (click)="follow()">
+      <div class="button-text" id="follow">{{texts[1][langId]}}</div>
     </button>
   </div>
 </div>

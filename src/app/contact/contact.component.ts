@@ -33,7 +33,7 @@ export class ContactComponent implements OnInit {
     {
       image: "assets/email.png",
       name: ["Personal email","Correo personal"],
-      href: "#",
+      href: "mailto:rodrigopizarro1234@gmail.com",
     },
     {
       image: "assets/github.png",
@@ -44,6 +44,11 @@ export class ContactComponent implements OnInit {
       image: "assets/linkedin.png",
       name: ["LinkedIn","LinkedIn"],
       href: "https://www.linkedin.com/in/rodrigo-pizarro-bb7449125/",
+    },
+    {
+      image: "assets/youtube.png",
+      name: ["YouTube","YouTube"],
+      href: "https://www.youtube.com/channel/UCeKEbDlofH93w40h3Md5x6A",
     },
   ]
 }

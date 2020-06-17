@@ -93,6 +93,36 @@ export const songs:Song[] = [
       "English mvapifovmsijn caojina oicaoiwcn ipajcn oiawjciepowicapokcm wap ocmpawock mjco k mcpo",
       "Español mvapifovmsijn caojina oicaoiwcn ipajcn oiawjciepowicapokcm wap ocmpawock mjco k mcpo cakjf aoejf apij oiau jpoiaj fpoakm paokrcpoadcpm ao osmcposkdpo aij paoid"],
   },
+  {
+    id: 4,
+    album: 1,
+    name: ["Computer Engineering","Ingeniería en computación"],
+    image: "assets/ucc.png",
+    duration: ["2017 - today","2017 - actualidad"],
+    description: [
+      "English mvapifovmsijn caojina oicaoiwcn ipajcn oiawjciepowicapokcm wap ocmpawock mjco k mcpo",
+      "Español mvapifovmsijn caojina oicaoiwcn ipajcn oiawjciepowicapokcm wap ocmpawock mjco k mcpo cakjf aoejf apij oiau jpoiaj fpoakm paokrcpoadcpm ao osmcposkdpo aij paoid"],
+  },
+  {
+    id: 5,
+    album: 1,
+    name: ["High school","Escuela secundaria"],
+    image: "assets/highSchool.png",
+    duration: ["2009 - 2016","2009 - 2016"],
+    description: [
+      "English mvapifovmsijn caojina oicaoiwcn ipajcn oiawjciepowicapokcm wap ocmpawock mjco k mcpo",
+      "Español mvapifovmsijn caojina oicaoiwcn ipajcn oiawjciepowicapokcm wap ocmpawock mjco k mcpo cakjf aoejf apij oiau jpoiaj fpoakm paokrcpoadcpm ao osmcposkdpo aij paoid"],
+  },
+  {
+    id: 6,
+    album: 1,
+    name: ["Primary school","Escuela primaria"],
+    image: "assets/pias.png",
+    duration: ["2004 - 2009","2004 - 2009"],
+    description: [
+      "English mvapifovmsijn caojina oicaoiwcn ipajcn oiawjciepowicapokcm wap ocmpawock mjco k mcpo",
+      "Español mvapifovmsijn caojina oicaoiwcn ipajcn oiawjciepowicapokcm wap ocmpawock mjco k mcpo cakjf aoejf apij oiau jpoiaj fpoakm paokrcpoadcpm ao osmcposkdpo aij paoid"],
+  },
 ]
 
 export const lang:string = navigator.language;

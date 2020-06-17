@@ -13,7 +13,7 @@ export class HeaderComponent implements OnInit {
   texts:any=[
     ["MONTHLY LISTENERS","OYENTES MENSUALES"],
     ["FOLLOW","SEGUIR"],
-    ["FOLLOWING","SIGUIENDO"]
+    ["FOLLOWING","SIGUIENDO"],
   ]
 
   ngOnInit(): void {
@@ -23,6 +23,19 @@ export class HeaderComponent implements OnInit {
       this.langId=0;
     }
   }
+
+  follow(){
+    this.following =! this.following;
+    if (this.following){
+      document.getElementById("follow").innerHTML = this.texts[2][this.langId];
+      (document.querySelector('.follow-button') as HTMLElement).style.color = "var(--color-primary)";
+    }else{
+      document.getElementById("follow").innerHTML = this.texts[1][this.langId];
+      (document.querySelector('.follow-button') as HTMLElement).style.color = "var(--color-text)";
+    }
+  }
+
+  following:boolean = false;
 
   @HostListener("window:scroll", ['$event'])
   onScroll(event:Event){

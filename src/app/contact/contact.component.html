@@ -1,7 +1,7 @@
 <div class="title-div">
   {{texts[0][langId]}}
   <ul class="cont-list">
-    <a href="{{cont.href}}" *ngFor="let cont of contact" class="cont-holder">
+    <a href="{{cont.href}}" target="_blank" *ngFor="let cont of contact" class="cont-holder">
       <img src="{{cont.image}}" class="cont-image">
       <div class="cont-name">{{cont.name[langId]}}</div>
     </a>
