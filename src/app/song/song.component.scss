@@ -122,7 +122,7 @@
   -webkit-transition: .2s;
   transition: opacity .2s;
   border-radius: 100px;
-  background:linear-gradient(to right, var(--color-text) calc(20*1%), var(--color-secondary) 0); //Add variable to move shadow
+  background:linear-gradient(to right, var(--color-text) calc(0*1%), var(--color-secondary) 0); //Add variable to move shadow
 }
 
 .slider::-webkit-slider-thumb {
@@ -152,8 +152,11 @@
 .icon{
   margin-right: 4vmin;
   margin-left: 4vmin;
+  background-color: var(--color-background);
+  color: #FFFFFF;
+  border: none;
+  border-radius: 100px;
 }
-
 .footer-duration-left{
   font-size: 13px;
   font-weight: normal;

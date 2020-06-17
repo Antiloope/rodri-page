@@ -1,6 +1,6 @@
 <div [@openClose]="isOpen ? 'open' : 'closed'" class="div-box" id="song">
   <div class="song-container">
-    <button mat-mini-fab class="more-button" (click)="copyToClipboard()">
+    <button mat-mini-fab class="more-button">
       <mat-icon class="more-icon">share</mat-icon>
     </button>
     <button mat-mini-fab class="minimize-button" (click)="toggle()">
@@ -18,13 +18,13 @@
       <div class="footer-song-artist">Rodrigo Pizarro</div>
       <div class="footer-duration-left">{{currentSong.duration[langId].split('-')[0]}}</div>
       <div class="footer-duration-right">{{currentSong.duration[langId].split('-')[1]}}</div>
-      <input type="range" min="1" max="100" value="20" class="slider" id="myRange">
+      <input type="range" min="1" max="100" step="0.3" value="{{cursor}}" (change)="setCursor(myRange)" class="slider" #myRange id="myRange">
       <div class="icons">
-        <i class="icon fas fa-random fa-lg"></i>
-        <i class="icon fas fa-step-backward fa-2x"></i>
-        <i class="icon fas fa-play-circle fa-4x"></i>
-        <i class="icon fas fa-step-forward fa-2x"></i>
-        <i class="icon fas fa-retweet fa-lg"></i>
+        <button class="icon"><i class="fas fa-random fa-lg"></i></button>
+        <button class="icon"><i class="fas fa-step-backward fa-2x"></i></button>
+        <button class="icon" (click)="startPlaying(myRange)"><mat-icon style="font-size: 5em;margin-left: -3vmin;margin-right: -3vmin;display: inline">{{isPlaying?'pause_circle_filled':'play_circle_filled'}}</mat-icon></button>
+        <button class="icon"><i class="fas fa-step-forward fa-2x"></i></button>
+        <button class="icon"><i class="fas fa-retweet fa-lg"></i></button>
       </div>
 
     </div>
