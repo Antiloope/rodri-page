@@ -1,0 +1,12 @@
+<div [@openClose]="isOpen ? 'open' : 'closed'" class="div-box" id="album">
+  <div class="album-container">
+    <button mat-mini-fab class="more-button">
+      <mat-icon class="more-icon">share</mat-icon>
+    </button>
+    <button mat-mini-fab class="minimize-button" (click)="toggle()">
+      <mat-icon class="more-icon">expand_more</mat-icon>
+    </button>
+    <h1 class="album-title">{{currentAlbum.title[langId].toUpperCase()}}</h1>
+    <h1 class="album-subtitle">{{currentAlbum.subtitle[langId].toUpperCase()}}</h1>
+  </div>
+</div>

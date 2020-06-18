@@ -20,9 +20,11 @@ import { PlaylistsComponent } from './playlists/playlists.component';
 import { Routes, RouterModule } from '@angular/router';
 import { SongComponent } from './song/song.component';
 import {MatSliderModule} from "@angular/material/slider";
+import { AlbumViewComponent } from './album-view/album-view.component';
 
 const routes: Routes = [
   { path: 'song/:id', component: SongComponent },
+  { path: 'album/:id', component: AlbumViewComponent },
 ];
 
 @NgModule({
@@ -34,7 +36,8 @@ const routes: Routes = [
     AlbumsComponent,
     AboutComponent,
     PlaylistsComponent,
-    SongComponent
+    SongComponent,
+    AlbumViewComponent
   ],
   imports: [
     BrowserModule,
