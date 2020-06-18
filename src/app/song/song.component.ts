@@ -29,14 +29,23 @@ import {Song, songs, Album, albums, lang} from "../app.component";
 export class SongComponent implements OnInit {
   isOpen = false;
   isPlaying = false;
+  nextSong = 0;
   toggle() {
     (document.querySelector('#song') as HTMLElement).style.top = window.pageYOffset+"px";
-
     if(this.isOpen){
       document.body.style.overflow = "visible";
-      setTimeout(()=>{
-        this.router.navigate(['/']);
-      },700);
+      if(this.nextSong){
+        setTimeout(()=>{
+          this.router.navigate(['/song/'+this.nextSong]);
+        },701);
+        setTimeout(()=>{
+          this.router.navigate(['/']);
+        },700);
+      }else{
+        setTimeout(()=>{
+          this.router.navigate(['/']);
+        },700);
+      }
       setTimeout(()=>{
         this.isOpen = false;
       },1);
@@ -61,6 +70,28 @@ export class SongComponent implements OnInit {
     document.getElementById('myRange').style.background = 'linear-gradient(to right, var(--color-text) calc('+range.value+'*1%), var(--color-secondary) 0)';
   }
 
+  goBack(){
+    let tmp = songs.find(song=>song.album===this.currentSong.album && song.id === this.currentSong.id-1);
+    if(tmp)
+      this.nextSong = tmp.id;
+    else
+      this.nextSong = 1;
+
+    this.isPlaying = false;
+    this.toggle();
+  }
+
+  goNext(){
+    let tmp = songs.find(song => song.album===this.currentSong.album && song.id === this.currentSong.id+1);
+    if(tmp)
+      this.nextSong = tmp.id;
+    else
+      this.nextSong = Math.floor(Math.random() * songs.length) + 1;
+
+    this.isPlaying = false;
+    this.toggle();
+  }
+
   async startPlaying(range){
     this.isPlaying=!this.isPlaying;
     range.value = this.cursor;
@@ -74,6 +105,15 @@ export class SongComponent implements OnInit {
       rangeElement.style.background = 'linear-gradient(to right, var(--color-text) calc('+range.value+'*1%), var(--color-secondary) 0)';
       range.value = this.cursor;
       await new Promise(r => setTimeout(r, 50));
+      if( this.cursor >= 100){
+        let tmp = songs.find(song=>song.album===this.currentSong.album && song.id === this.currentSong.id+1);
+
+        if(tmp) this.nextSong = tmp.id;
+        else this.nextSong = this.nextSong = Math.floor(Math.random() * songs.length) + 1;
+
+        this.isPlaying = false;
+        this.toggle();
+      }
     }
   }
 

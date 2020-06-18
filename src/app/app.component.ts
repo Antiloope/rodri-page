@@ -41,7 +41,7 @@ export const albums:Album[] = [
   },
   {
     id:4,
-    image: "assets/art.jpg",
+    image: "assets/art.png",
     route: "album4",
     title: ["Art","Arte"],
     subtitle: ["Artistic expressions","Expresiones artísticas"],
