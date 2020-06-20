@@ -23,14 +23,14 @@ export const albums:Album[] = [
     image: "assets/studies.jpg",
     route: "album1",
     title: ["Studies","Estudios"],
-    subtitle: ["All my studies","Todos mis estudios"],
+    subtitle: ["My formal education","Mi educación formal"],
   },
   {
     id:2,
     image: "assets/working.jpg",
     route: "album2",
-    title: ["Working","Trabajo"],
-    subtitle: ["My working experiences","Mis experiencias laborales"],
+    title: ["Work","Trabajo"],
+    subtitle: ["Working experiences","Experiencias laborales"],
   },
   {
     id:3,
@@ -48,17 +48,17 @@ export const albums:Album[] = [
   },
   {
     id:5,
-    image: "assets/studies.jpg",
-    route: "album1",
-    title: ["Studies","Estudios"],
-    subtitle: ["All my studies","Todos mis estudios"],
+    image: "assets/hobbies.jpg",
+    route: "album5",
+    title: ["Other hobbies","Otros hobbies"],
+    subtitle: ["Gaming, 3D printing...","Juegos, impresion 3D..."],
   },
   {
     id:6,
-    image: "assets/studies.jpg",
-    route: "album1",
-    title: ["Studies","Estudios"],
-    subtitle: ["All my studies","Todos mis estudios"],
+    image: "assets/recommendations.jpg",
+    route: "album6",
+    title: ["Recommendations","Recomendaciones"],
+    subtitle: ["Books, films, games...","Libros, películas, juegos..."],
   },
 ]
 
@@ -70,7 +70,7 @@ export const songs:Song[] = [
     image: "assets/siges.png",
     duration: ["2019 (July) - today","2019 (Julio) - actualidad"],
     description: [
-      "English pafvjivoerpakm cka sdckal dk alkd cakd cka sdkhas kdaksjdfh lkjasdk hjsadlc añdlkja ñcsdlkjca lskdj akljewpij caij cpij epivj fdjivsp rjvp9idjf pvi jvpf vmsdocainvwo ckeldlcwdnibaumir wonckelmad kelcms",
+      "<b>English</b> pafvjivoerpakm cka sdckal dk alkd cakd cka sdkhas kdaksjdfh lkjasdk hjsadlc añdlkja ñcsdlkjca lskdj akljewpij caij cpij epivj fdjivsp rjvp9idjf pvi jvpf vmsdocainvwo ckeldlcwdnibaumir wonckelmad kelcms",
       "Trabajo en Siges desarrollando diferentes soluciones. Implementando pafvjivoerpa kvmsdocainvwockel dlcwdnibaumirwonckelmad kelcms"],
   },
   {

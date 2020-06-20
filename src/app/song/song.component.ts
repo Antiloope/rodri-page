@@ -124,6 +124,7 @@ export class SongComponent implements OnInit {
     this.route.paramMap.subscribe(params => {
       this.currentSong = songs.find(exp => exp.id===+params.get('id'));
       this.currentSong.al = albums.find(al => al.id===this.currentSong.album);
+      document.getElementById('description').innerHTML = this.currentSong.description[this.langId];
     })
   }
 }

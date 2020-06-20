@@ -21,6 +21,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { SongComponent } from './song/song.component';
 import {MatSliderModule} from "@angular/material/slider";
 import { AlbumViewComponent } from './album-view/album-view.component';
+import {MatSnackBarModule} from '@angular/material/snack-bar';
 
 const routes: Routes = [
   { path: 'song/:id', component: SongComponent },
@@ -52,6 +53,7 @@ const routes: Routes = [
     MatSliderModule,
     OwlModule,
     RouterModule.forRoot(routes),
+    MatSnackBarModule,
   ],
   exports:[RouterModule],
   providers: [],
