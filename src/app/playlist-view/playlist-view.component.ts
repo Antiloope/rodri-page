@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import {animate, state, style, transition, trigger} from "@angular/animations";
 import {ActivatedRoute, Router} from "@angular/router";
 import {albums, lang, Playlist, playlists, upDownAnimation} from "../app.component";
 

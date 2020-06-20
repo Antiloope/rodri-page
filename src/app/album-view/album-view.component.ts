@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {ActivatedRoute, Router} from "@angular/router";
 import {albums, lang, Song, songs, upDownAnimation} from "../app.component";
-import {animate, state, style, transition, trigger} from "@angular/animations";
 
 @Component({
   selector: 'app-album-view',

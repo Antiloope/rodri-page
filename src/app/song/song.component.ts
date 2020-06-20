@@ -1,7 +1,6 @@
-import {Component, DoCheck, OnInit} from '@angular/core';
-import {trigger,state,style,transition,animate,sequence} from '@angular/animations';
+import {Component, OnInit} from '@angular/core';
 import {ActivatedRoute, Router} from '@angular/router';
-import {Song, songs, Album, albums, lang, upDownAnimation} from "../app.component";
+import { songs, albums, lang, upDownAnimation} from "../app.component";
 
 @Component({
   selector: 'app-song',
