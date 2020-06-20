@@ -31,7 +31,7 @@
 }
 .minimize-button{
   display: block;
-  margin-top: 10px;
+  margin-top: 2.5vh;
   float: left;
   margin-left: 2vmax;
   color: var(--color-text);
@@ -39,7 +39,7 @@
 }
 .more-button{
   display: block;
-  margin-top: 10px;
+  margin-top: 2.5vh;
   float: right;
   margin-right: 2vmax;
   color: var(--color-text);
@@ -47,7 +47,7 @@
 }
 .song-title{
   margin-top: 0;
-  padding-top: 12px;
+  padding-top: 3vh;
   font-size: 15px;
   font-weight: lighter;
   margin-bottom: 0;
