@@ -1,4 +1,24 @@
 import { Component } from '@angular/core';
+import {animate, state, style, transition, trigger} from "@angular/animations";
+
+export const upDownAnimation = [
+  trigger('openClose', [
+    state('open', style({
+      transform: 'translateY(0%)',
+      visibility:'visible',
+    })),
+    state('closed',
+      style({
+        transform: 'translateY(150%)',
+      })),
+    transition('open => closed', [
+      animate("0.4s cubic-bezier(0,0,.42,1.02)")
+    ]),
+    transition('closed => open', [
+      animate('0.4s cubic-bezier(0,0,.42,1.02)')
+    ]),
+  ]),
+]
 
 export interface Song {
   id: number;

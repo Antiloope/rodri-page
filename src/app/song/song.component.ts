@@ -1,30 +1,13 @@
 import {Component, DoCheck, OnInit} from '@angular/core';
 import {trigger,state,style,transition,animate,sequence} from '@angular/animations';
 import {ActivatedRoute, Router} from '@angular/router';
-import {Song, songs, Album, albums, lang} from "../app.component";
+import {Song, songs, Album, albums, lang, upDownAnimation} from "../app.component";
 
 @Component({
   selector: 'app-song',
   templateUrl: './song.component.html',
   styleUrls: ['./song.component.scss'],
-  animations:[
-    trigger('openClose', [
-      state('open', style({
-        transform: 'translateY(0%)',
-        visibility:'visible',
-      })),
-      state('closed',
-        style({
-        transform: 'translateY(150%)',
-      })),
-      transition('open => closed', [
-        animate("0.7s cubic-bezier(0,0,.42,1.02)")
-      ]),
-      transition('closed => open', [
-        animate('0.7s cubic-bezier(0,0,.42,1.02)')
-      ]),
-    ]),
-  ],
+  animations: upDownAnimation,
 })
 export class SongComponent implements OnInit {
   isOpen = false;
@@ -37,14 +20,14 @@ export class SongComponent implements OnInit {
       if(this.nextSong){
         setTimeout(()=>{
           this.router.navigate(['/song/'+this.nextSong]);
-        },701);
+        },401);
         setTimeout(()=>{
           this.router.navigate(['/']);
-        },700);
+        },400);
       }else{
         setTimeout(()=>{
           this.router.navigate(['/']);
-        },700);
+        },400);
       }
       setTimeout(()=>{
         this.isOpen = false;

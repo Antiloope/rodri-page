@@ -1,30 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 import {ActivatedRoute, Router} from "@angular/router";
-import {albums, lang, Song, songs} from "../app.component";
+import {albums, lang, Song, songs, upDownAnimation} from "../app.component";
 import {animate, state, style, transition, trigger} from "@angular/animations";
 
 @Component({
   selector: 'app-album-view',
   templateUrl: './album-view.component.html',
   styleUrls: ['./album-view.component.scss'],
-  animations:[
-    trigger('openClose', [
-      state('open', style({
-        transform: 'translateY(0%)',
-        visibility:'visible',
-      })),
-      state('closed',
-        style({
-          transform: 'translateY(150%)',
-        })),
-      transition('open => closed', [
-        animate("0.7s cubic-bezier(0,0,.42,1.02)")
-      ]),
-      transition('closed => open', [
-        animate('0.7s cubic-bezier(0,0,.42,1.02)')
-      ]),
-    ]),
-  ],
+  animations: upDownAnimation,
 })
 export class AlbumViewComponent implements OnInit {
   langId:number;
@@ -38,7 +21,7 @@ export class AlbumViewComponent implements OnInit {
       document.body.style.overflow = "visible";
       setTimeout(()=>{
         this.router.navigate(['/']);
-      },700);
+      },400);
       setTimeout(()=>{
         this.isOpen = false;
       },1);
