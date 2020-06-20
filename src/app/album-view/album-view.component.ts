@@ -11,7 +11,9 @@ import {animate, state, style, transition, trigger} from "@angular/animations";
 })
 export class AlbumViewComponent implements OnInit {
   langId:number;
-  texts:any = [];
+  texts:any = [
+    ["Nothing to show here","Nada para mostrar por aca"]
+  ];
   currentAlbum:any;
   songs: Song[] = [];
   isOpen = false;

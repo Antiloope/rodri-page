@@ -9,6 +9,9 @@
     <h1 class="album-title">{{currentAlbum.title[langId].toUpperCase()}}</h1>
     <h1 class="album-subtitle">{{currentAlbum.subtitle[langId].toUpperCase()}}</h1>
     <ul class="album-list">
+      <li class="song-holder" [style]="songs.length?'display:none':''">
+        <div class="no-songs">{{texts[0][langId]}}</div>
+      </li>
       <li *ngFor="let song of songs" class="song-holder" routerLink="/song/{{song.id}}" routerLinkActive="active">
         <img src="{{song.image}}" class="song-image">
         <div class="song-name">{{song.name[langId]}}</div>
