@@ -2,7 +2,7 @@
   {{texts[0][langId]}}
   <div class="playlist-carousel">
     <owl-carousel [options]="mySlideOptions" [carouselClasses]="['owl-theme', 'sliding']" >
-      <div class="item" *ngFor="let playlist of playlists;let i = index">
+      <div class="item" *ngFor="let playlist of playlists;let i = index" routerLink="/playlist/{{playlist.id}}" routerLinkActive="active">
         <div class="playlist-container-div">
           <img class="playlist-image" src={{playlist.image}}/>
           <div class="playlist-title">{{playlist.title[langId]}}</div>

@@ -9,6 +9,14 @@ export interface Song {
   description: string[];
 }
 
+export interface Playlist {
+  id:number;
+  image:string;
+  title:string[];
+  subtitle:string[];
+  embedded:string;
+}
+
 export interface Album {
   id: number;
   image: string;
@@ -16,6 +24,23 @@ export interface Album {
   title: string[];
   subtitle: string[];
 }
+
+export const playlists:Playlist[] = [
+  {
+    id:1,
+    image: "assets/playlist1.png",
+    title: ["Inspiration","Inspiración"],
+    subtitle: [" "," "],
+    embedded: "<iframe style=\"height: inherit;width: inherit\" src=\"https://open.spotify.com/embed/playlist/1RBh3VQ7qOKR40pGvpX21w\" width=\"inherit\" height=\"inherit\" frameborder=\"0\" allowtransparency=\"true\" allow=\"encrypted-media\"></iframe>",
+  },
+  {
+    id:2,
+    image: "assets/playlist2.png",
+    title: ["Classicism","Clasicismo"],
+    subtitle: [" "," "],
+    embedded: "<iframe style=\"height: inherit;width: inherit\" src=\"https://open.spotify.com/embed/playlist/4ie5YFRRj3EZe8KtrSQOAj\" width=\"inherit\" height=\"inherit\" frameborder=\"0\" allowtransparency=\"true\" allow=\"encrypted-media\"></iframe>",
+  },
+]
 
 export const albums:Album[] = [
   {

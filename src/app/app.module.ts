@@ -21,11 +21,12 @@ import { Routes, RouterModule } from '@angular/router';
 import { SongComponent } from './song/song.component';
 import {MatSliderModule} from "@angular/material/slider";
 import { AlbumViewComponent } from './album-view/album-view.component';
-import {MatSnackBarModule} from '@angular/material/snack-bar';
+import { PlaylistViewComponent } from './playlist-view/playlist-view.component';
 
 const routes: Routes = [
   { path: 'song/:id', component: SongComponent },
   { path: 'album/:id', component: AlbumViewComponent },
+  { path: 'playlist/:id', component: PlaylistViewComponent },
 ];
 
 @NgModule({
@@ -38,7 +39,8 @@ const routes: Routes = [
     AboutComponent,
     PlaylistsComponent,
     SongComponent,
-    AlbumViewComponent
+    AlbumViewComponent,
+    PlaylistViewComponent
   ],
   imports: [
     BrowserModule,
@@ -53,7 +55,6 @@ const routes: Routes = [
     MatSliderModule,
     OwlModule,
     RouterModule.forRoot(routes),
-    MatSnackBarModule,
   ],
   exports:[RouterModule],
   providers: [],

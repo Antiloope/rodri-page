@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {Album, albums, lang} from "../app.component";
+import {Playlist, playlists, lang} from "../app.component";
 
 @Component({
   selector: 'app-playlists',
@@ -29,5 +29,5 @@ export class PlaylistsComponent implements OnInit {
     lazyLoad: true,
     margin:20,
   };
-  playlists: Album[] = albums;
+  playlists: Playlist[] = playlists;
 }
