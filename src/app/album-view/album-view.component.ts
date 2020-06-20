@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {ActivatedRoute, Router} from "@angular/router";
-import {albums, lang, songs} from "../app.component";
+import {albums, lang, Song, songs} from "../app.component";
 import {animate, state, style, transition, trigger} from "@angular/animations";
 
 @Component({
@@ -30,6 +30,7 @@ export class AlbumViewComponent implements OnInit {
   langId:number;
   texts:any = [];
   currentAlbum:any;
+  songs: Song[] = [];
   isOpen = false;
   toggle() {
     (document.querySelector('#album') as HTMLElement).style.top = window.pageYOffset+"px";
@@ -56,7 +57,7 @@ export class AlbumViewComponent implements OnInit {
     this.toggle();
     this.route.paramMap.subscribe(params => {
       this.currentAlbum = albums.find(album => album.id===+params.get('id'));
-      this.currentAlbum.songs = songs.find(song => song.album ===+this.currentAlbum.id);
+      this.songs = songs.filter(song => song.album ===+this.currentAlbum.id);
     })
   }
 
