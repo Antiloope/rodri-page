@@ -34,6 +34,27 @@ export const playlists: Playlist[] = [
     subtitle: [" ", " "],
     embedded: "<iframe style=\"height: inherit;width: inherit\" src=\"https://open.spotify.com/embed/playlist/4ie5YFRRj3EZe8KtrSQOAj\" width=\"inherit\" height=\"inherit\" frameborder=\"0\" allowtransparency=\"true\" allow=\"encrypted-media\"></iframe>",
   },
+  {
+    id: 3,
+    image: "assets/playlist3.png",
+    title: ["Escena ARG", "Escena ARG"],
+    subtitle: [" ", " "],
+    embedded: "<iframe style=\"height: inherit;width: inherit\" src=\"https://open.spotify.com/embed/playlist/61wBaEIzq3PDu9Ep2AMxKA\" width=\"inherit\" height=\"inherit\" frameborder=\"0\" allowtransparency=\"true\" allow=\"encrypted-media\"></iframe>",
+  },
+  {
+    id: 4,
+    image: "assets/playlist4.png",
+    title: ["Epic!", "Épicos!"],
+    subtitle: [" ", " "],
+    embedded: "<iframe style=\"height: inherit;width: inherit\" src=\"https://open.spotify.com/embed/playlist/67zBNdyCco1g7atVFIRvzI\" width=\"inherit\" height=\"inherit\" frameborder=\"0\" allowtransparency=\"true\" allow=\"encrypted-media\"></iframe>",
+  },
+  {
+    id: 5,
+    image: "assets/playlist5.png",
+    title: ["Romanticism", "Romanticismo"],
+    subtitle: [" ", " "],
+    embedded: "<iframe style=\"height: inherit;width: inherit\" src=\"https://open.spotify.com/embed/playlist/0EkZVsSfDdCNxFWgIYgphm\" width=\"inherit\" height=\"inherit\" frameborder=\"0\" allowtransparency=\"true\" allow=\"encrypted-media\"></iframe>",
+  },
 ]
 export const albums: Album[] = [
   {
@@ -87,7 +108,7 @@ export const songs: Song[] = [
     image: "assets/siges.png",
     duration: ["2019 (July) - today", "2019 (Julio) - actualidad"],
     description: [
-      "I work in <a href='https://www.linkedin.com/company/sistemasiges/about/' style='text-decoration: none;color: inherit' target='_blank'><b>SIGES SA</b></a>, a company that produce and manage its own integral management software for service stations. As developer in charge of integration projects of new technologies as Mercado Pago, YPF app and other projects in C# (.NET) and MSSQL.",
+      "I work at <a href='https://www.linkedin.com/company/sistemasiges/about/' style='text-decoration: none;color: inherit' target='_blank'><b>SIGES SA</b></a>, a company that produce and manage its own integral management software for service stations. As developer in charge of integration projects of new technologies as Mercado Pago, YPF app and other projects in C# (.NET) and MSSQL.",
       "Trabajo en <a href='https://www.linkedin.com/company/sistemasiges/about/' style='text-decoration: none;color: inherit' target='_blank'><b>SIGES SA</b></a>, empresa que produce y administra un software propio para gestión integral de estaciones de servicio. Mi cargo es de desarrollador a cargo de proyectos de integración de nuevas tecnologias como Mercado Pago, APP de YPF y otros desarrollos en C# (.NET) y MSSQL."],
   },
   {
@@ -107,7 +128,7 @@ export const songs: Song[] = [
     image: "assets/pentacom.png",
     duration: ["2016 (3 months)", "2016 (3 meses)"],
     description: [
-      "In my last year at high school, I made a working internship in <a href='https://www.pentacom.com.ar/' style='text-decoration: none;color: inherit' target='_blank'><b>Pentacom</b></a>. A company that makes repairs of electronic devices, which allowed me to see how all technical contents studied in my school are applied in real life.",
+      "In my last year at high school, I made a working internship at <a href='https://www.pentacom.com.ar/' style='text-decoration: none;color: inherit' target='_blank'><b>Pentacom</b></a>. A company that makes repairs of electronic devices, which allowed me to see how all technical contents studied in my school are applied in real life.",
       "En el último año del secundario, realicé una pasantia de trabajo en <a href='https://www.pentacom.com.ar/' style='text-decoration: none;color: inherit' target='_blank'><b>Pentacom</b></a>. Una empresa que realiza reparaciones de aparatos electrónicos, lo cual me permitió ver como se aplican en la realidad los contenidos técnicos vistos en el colegio."],
   },
   {
@@ -117,7 +138,7 @@ export const songs: Song[] = [
     image: "assets/ucc.png",
     duration: ["2017 - today", "2017 - actualidad"],
     description: [
-      "Since I entered technical oriented high school, I knew I was going to study any career related with electronics, and that's how years later, I choose <a href='https://www.ucc.edu.ar/facultades/ingenieria/' style='text-decoration: none;color: inherit' target='_blank'><b>computer engineering</b></a>. A degree that relates everything I like and fit perfectly with my abilities.",
+      "Since I entered technical oriented high school, I knew I was going to study any career related with electronics, and that's how years later, I chose <a href='https://www.ucc.edu.ar/facultades/ingenieria/' style='text-decoration: none;color: inherit' target='_blank'><b>computer engineering</b></a>. A degree that relates everything I like and fits perfectly with my abilities.",
       "Desde que entré al secundario técnico, ya sabía que iba a estudiar un carrera relacionada con la electrónica, y asi fue como años mas tarde, tomé la elección por <a href='https://www.ucc.edu.ar/facultades/ingenieria/' style='text-decoration: none;color: inherit' target='_blank'><b>ingeniería en computación</b></a>. Una carrera que relaciona todo lo que mas me gusta y encaja a la perfección con mis habilidades."],
   },
   {
@@ -127,7 +148,7 @@ export const songs: Song[] = [
     image: "assets/highSchool.png",
     duration: ["2009 - 2016", "2009 - 2016"],
     description: [
-      "I did the secondary at <a href='https://www.itsv.edu.ar/itsv/index.php' style='text-decoration: none;color: inherit' target='_blank'><b>Instituto Técnico Salesiano Villada</b></a>. A high school with technical orientation in 3 areas: informatics, electromechanics and electronics. In my fourth year, I make the decision to enter the speciality in electronics, where I learned most of the main concepts and tools that I deepened later in my career.",
+      "I attended my secondary school at <a href='https://www.itsv.edu.ar/itsv/index.php' style='text-decoration: none;color: inherit' target='_blank'><b>Instituto Técnico Salesiano Villada</b></a>. A high school with technical orientation in 3 areas: informatics, electromechanics and electronics. In my fourth year, I make the decision to enter the speciality in electronics, where I learned most of the main concepts and tools that I deepened later in my career.",
       "Hice el secundario en el <a href='https://www.itsv.edu.ar/itsv/index.php' style='text-decoration: none;color: inherit' target='_blank'><b>Instituto Técnico Salesiano Villada</b></a>. Una escuela con orientación técnica en 3 areas: informática, electromecánica y electrónica. En cuarto año, tomé la desición de entrar a electrónica, donde aprendí gran parte de los conceptos y herraminetas que despues profundicé durante la carrera."],
   },
   {
@@ -139,6 +160,16 @@ export const songs: Song[] = [
     description: [
       "I did my primary school in <b>Escuelas Pías</b>, a catholic school with orientation in social sciences",
       "Mi escuela primaria la hice en <b>Escuelas Pías</b>, un colegio católico con orientación en ciencias sociales"],
+  },
+  {
+    id: 7,
+    album: 3,
+    name: ["ChordScript", "ChordScript"],
+    image: "assets/cs.png",
+    duration: ["2020", "2020"],
+    description: [
+      "<a href='https://github.com/Antiloope/ChordScript' style='text-decoration: none;color: inherit' target='_blank'><b>ChordScript</b></a> is my thesis project. A powerful tool for music programming, based on 3 pillars: programming, music and education. If you are a musician interested in programming or a programmer interested in music, ChordScript is perfect for you",
+      "<a href='https://github.com/Antiloope/ChordScript' style='text-decoration: none;color: inherit' target='_blank'><b>ChordScript</b></a> es mi proyecto de tesis. Una herramienta para programar música, centrada en 3 pilares: programación, música y educación. Si sos músico y te interesa la programación o sos programador y te interesa la música, ChordScript es la herramienta perfecta"],
   },
 ]
 export const lang: string = navigator.language;

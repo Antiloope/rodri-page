@@ -13,8 +13,8 @@ export class AboutComponent implements OnInit {
   langId:number;
   texts:any=[
     ["About","Sobre mi"],
-    ["Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."],
+    ["I was born in Córdoba, Argentina. Since childhood I like music and technology, and I took both passions hand in hand. At present, I'm studying last year of computer engineering and having listened a lot of music..",
+     "Nací en Córdoba, Argentina. Desde chico me gustó siempre la música y la tecnología, y fui llevando ambas pasiones de la mano. Actualmente estoy cursando el ultimo año de ingeniería en computación y habiendo escuchado mucha musica.."],
   ]
 
   ngOnInit(): void {
