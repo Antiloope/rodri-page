@@ -97,8 +97,8 @@ export const songs: Song[] = [
     image: "assets/school.png",
     duration: ["2018 - today", "2018 - actualidad"],
     description: [
-      "English mvapifovmsijn caojina oicaoiwcn ipajcn oiawjciepowicapokcm wap ocmpawock mjco k mcpo",
-      "Español mvapifovmsijn caojina oicaoiwcn ipajcn oiawjciepowicapokcm wap ocmpawock mjco k mcpo"],
+      "I love education and for this reason I started teaching a group of students in 2018, helping them with subjects like electronics or mathematics. Over time, I met more students and managed to accommodate my schedules to continue giving private lessons, working and studying.",
+      "Me encanta la educación y por eso empecé a dar clases en 2018 a varios alumnos, ayudandolos con materias de electrónica o matemáticas. Con el paso del tiempo, fui conociendo nuevos alumnos y acomodando mis horarios para poder dar clases, estudiar y trabajar."],
   },
   {
     id: 3,
@@ -107,8 +107,8 @@ export const songs: Song[] = [
     image: "assets/pentacom.png",
     duration: ["2016 (3 months)", "2016 (3 meses)"],
     description: [
-      "English mvapifovmsijn caojina oicaoiwcn ipajcn oiawjciepowicapokcm wap ocmpawock mjco k mcpo",
-      "Español mvapifovmsijn caojina oicaoiwcn ipajcn oiawjciepowicapokcm wap ocmpawock mjco k mcpo cakjf aoejf apij oiau jpoiaj fpoakm paokrcpoadcpm ao osmcposkdpo aij paoid"],
+      "In my last year at high school, I made a working internship in <a href='https://www.pentacom.com.ar/' style='text-decoration: none;color: inherit' target='_blank'><b>Pentacom</b></a>. A company that makes repairs of electronic devices, which allowed me to see how all technical contents studied in my school are applied in real life.",
+      "En el último año del secundario, realicé una pasantia de trabajo en <a href='https://www.pentacom.com.ar/' style='text-decoration: none;color: inherit' target='_blank'><b>Pentacom</b></a>. Una empresa que realiza reparaciones de aparatos electrónicos, lo cual me permitió ver como se aplican en la realidad los contenidos técnicos vistos en el colegio."],
   },
   {
     id: 4,
@@ -117,8 +117,8 @@ export const songs: Song[] = [
     image: "assets/ucc.png",
     duration: ["2017 - today", "2017 - actualidad"],
     description: [
-      "English mvapifovmsijn caojina oicaoiwcn ipajcn oiawjciepowicapokcm wap ocmpawock mjco k mcpo",
-      "Español mvapifovmsijn caojina oicaoiwcn ipajcn oiawjciepowicapokcm wap ocmpawock mjco k mcpo cakjf aoejf apij oiau jpoiaj fpoakm paokrcpoadcpm ao osmcposkdpo aij paoid"],
+      "Since I entered technical oriented high school, I knew I was going to study any career related with electronics, and that's how years later, I choose <a href='https://www.ucc.edu.ar/facultades/ingenieria/' style='text-decoration: none;color: inherit' target='_blank'><b>computer engineering</b></a>. A degree that relates everything I like and fit perfectly with my abilities.",
+      "Desde que entré al secundario técnico, ya sabía que iba a estudiar un carrera relacionada con la electrónica, y asi fue como años mas tarde, tomé la elección por <a href='https://www.ucc.edu.ar/facultades/ingenieria/' style='text-decoration: none;color: inherit' target='_blank'><b>ingeniería en computación</b></a>. Una carrera que relaciona todo lo que mas me gusta y encaja a la perfección con mis habilidades."],
   },
   {
     id: 5,
@@ -127,8 +127,8 @@ export const songs: Song[] = [
     image: "assets/highSchool.png",
     duration: ["2009 - 2016", "2009 - 2016"],
     description: [
-      "English mvapifovmsijn caojina oicaoiwcn ipajcn oiawjciepowicapokcm wap ocmpawock mjco k mcpo",
-      "Español mvapifovmsijn caojina oicaoiwcn ipajcn oiawjciepowicapokcm wap ocmpawock mjco k mcpo cakjf aoejf apij oiau jpoiaj fpoakm paokrcpoadcpm ao osmcposkdpo aij paoid"],
+      "I did the secondary at <a href='https://www.itsv.edu.ar/itsv/index.php' style='text-decoration: none;color: inherit' target='_blank'><b>Instituto Técnico Salesiano Villada</b></a>. A high school with technical orientation in 3 areas: informatics, electromechanics and electronics. In my fourth year, I make the decision to enter the speciality in electronics, where I learned most of the main concepts and tools that I deepened later in my career.",
+      "Hice el secundario en el <a href='https://www.itsv.edu.ar/itsv/index.php' style='text-decoration: none;color: inherit' target='_blank'><b>Instituto Técnico Salesiano Villada</b></a>. Una escuela con orientación técnica en 3 areas: informática, electromecánica y electrónica. En cuarto año, tomé la desición de entrar a electrónica, donde aprendí gran parte de los conceptos y herraminetas que despues profundicé durante la carrera."],
   },
   {
     id: 6,
@@ -137,8 +137,8 @@ export const songs: Song[] = [
     image: "assets/pias.png",
     duration: ["2004 - 2009", "2004 - 2009"],
     description: [
-      "English mvapifovmsijn caojina oicaoiwcn ipajcn oiawjciepowicapokcm wap ocmpawock mjco k mcpo",
-      "Español mvapifovmsijn caojina oicaoiwcn ipajcn oiawjciepowicapokcm wap ocmpawock mjco k mcpo cakjf aoejf apij oiau jpoiaj fpoakm paokrcpoadcpm ao osmcposkdpo aij paoid"],
+      "I did my primary school in <b>Escuelas Pías</b>, a catholic school with orientation in social sciences",
+      "Mi escuela primaria la hice en <b>Escuelas Pías</b>, un colegio católico con orientación en ciencias sociales"],
   },
 ]
 export const lang: string = navigator.language;
