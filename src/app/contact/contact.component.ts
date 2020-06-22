@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {lang} from "../app.component";
+import {lang} from "../global-content";
 
 export interface Contact {
   image: string;

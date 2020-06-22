@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import {albums, Album, lang} from "../app.component";
+import {Album} from "../global-types";
+import {albums, lang} from "../global-content";
 
 @Component({
   selector: 'app-albums',

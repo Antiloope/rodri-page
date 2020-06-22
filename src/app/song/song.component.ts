@@ -1,6 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {ActivatedRoute, Router} from '@angular/router';
-import { songs, albums, lang, upDownAnimation} from "../app.component";
+import {albums, lang, songs, upDownAnimation} from "../global-content";
 
 @Component({
   selector: 'app-song',

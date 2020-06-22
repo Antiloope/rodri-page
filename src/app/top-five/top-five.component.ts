@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import {lang, Song, songs} from "../app.component";
 import {range} from "rxjs";
+import {Song} from "../global-types";
+import {lang, songs} from "../global-content";
 
 @Component({
   selector: 'app-top-five',

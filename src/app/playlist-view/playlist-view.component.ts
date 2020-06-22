@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {ActivatedRoute, Router} from "@angular/router";
-import {albums, lang, Playlist, playlists, upDownAnimation} from "../app.component";
+import {Playlist} from "../global-types";
+import {albums, lang, playlists, upDownAnimation} from "../global-content";
 
 @Component({
   selector: 'app-playlist-view',
