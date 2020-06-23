@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "node server.js",
-    "build": "ng build",
+    "build": "ng build --prod --base-href https://antiloope.github.io/rodri-page/",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
@@ -34,6 +34,7 @@
     "@types/jasmine": "~3.5.0",
     "@types/jasminewd2": "~2.0.3",
     "@types/node": "^12.11.1",
+    "angular-cli-ghpages": "^0.6.2",
     "codelyzer": "^5.1.2",
     "express": "^4.17.1",
     "jasmine-core": "~3.5.0",
