@@ -46,9 +46,9 @@ export class ContactComponent implements OnInit {
       href: "https://www.linkedin.com/in/rodrigo-pizarro-bb7449125/",
     },
     {
-      image: "assets/youtube.png",
-      name: ["YouTube","YouTube"],
-      href: "https://www.youtube.com/channel/UCeKEbDlofH93w40h3Md5x6A",
+      image: "assets/instagram.png",
+      name: ["Instagram","Instagram"],
+      href: "https://www.instagram.com/rodri__pizarro/",
     },
   ]
 }

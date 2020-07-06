@@ -27,19 +27,20 @@ export const playlists: Playlist[] = [
     subtitle: [" ", " "],
     embedded: "<iframe style=\"height: inherit;width: inherit\" src=\"https://open.spotify.com/embed/playlist/1RBh3VQ7qOKR40pGvpX21w\" width=\"inherit\" height=\"inherit\" frameborder=\"0\" allowtransparency=\"true\" allow=\"encrypted-media\"></iframe>",
   },
+
   {
     id: 2,
+    image: "assets/playlist5.png",
+    title: ["Random", "Random"],
+    subtitle: [" ", " "],
+    embedded: "<iframe style=\"height: inherit;width: inherit\" src=\"https://open.spotify.com/embed/playlist/5EXv2Zvd8xElo5I13lPS9m\" width=\"inherit\" height=\"inherit\" frameborder=\"0\" allowtransparency=\"true\" allow=\"encrypted-media\"></iframe>",
+  },
+  {
+    id: 3,
     image: "assets/playlist2.png",
     title: ["Classicism", "Clasicismo"],
     subtitle: [" ", " "],
     embedded: "<iframe style=\"height: inherit;width: inherit\" src=\"https://open.spotify.com/embed/playlist/4ie5YFRRj3EZe8KtrSQOAj\" width=\"inherit\" height=\"inherit\" frameborder=\"0\" allowtransparency=\"true\" allow=\"encrypted-media\"></iframe>",
-  },
-  {
-    id: 3,
-    image: "assets/playlist3.png",
-    title: ["Escena ARG", "Escena ARG"],
-    subtitle: [" ", " "],
-    embedded: "<iframe style=\"height: inherit;width: inherit\" src=\"https://open.spotify.com/embed/playlist/61wBaEIzq3PDu9Ep2AMxKA\" width=\"inherit\" height=\"inherit\" frameborder=\"0\" allowtransparency=\"true\" allow=\"encrypted-media\"></iframe>",
   },
   {
     id: 4,
@@ -50,10 +51,10 @@ export const playlists: Playlist[] = [
   },
   {
     id: 5,
-    image: "assets/playlist5.png",
-    title: ["Romanticism", "Romanticismo"],
+    image: "assets/playlist3.png",
+    title: ["Escena ARG", "Escena ARG"],
     subtitle: [" ", " "],
-    embedded: "<iframe style=\"height: inherit;width: inherit\" src=\"https://open.spotify.com/embed/playlist/0EkZVsSfDdCNxFWgIYgphm\" width=\"inherit\" height=\"inherit\" frameborder=\"0\" allowtransparency=\"true\" allow=\"encrypted-media\"></iframe>",
+    embedded: "<iframe style=\"height: inherit;width: inherit\" src=\"https://open.spotify.com/embed/playlist/61wBaEIzq3PDu9Ep2AMxKA\" width=\"inherit\" height=\"inherit\" frameborder=\"0\" allowtransparency=\"true\" allow=\"encrypted-media\"></iframe>",
   },
 ]
 export const albums: Album[] = [
@@ -102,7 +103,7 @@ export const albums: Album[] = [
 ]
 export const songs: Song[] = [
   {
-    id: 1,
+    id: 2,
     album: 2,
     name: ["Siges", "Siges"],
     image: "assets/siges.png",
@@ -112,7 +113,7 @@ export const songs: Song[] = [
       "Trabajo en <a href='https://www.linkedin.com/company/sistemasiges/about/' style='text-decoration: none;color: inherit' target='_blank'><b>SIGES SA</b></a>, empresa que produce y administra un software propio para gestión integral de estaciones de servicio. Mi cargo es de desarrollador a cargo de proyectos de integración de nuevas tecnologias como Mercado Pago, APP de YPF y otros desarrollos en C# (.NET) y MSSQL."],
   },
   {
-    id: 2,
+    id: 3,
     album: 2,
     name: ["School support classes", "Clases de apoyo escolar"],
     image: "assets/school.png",
@@ -122,7 +123,7 @@ export const songs: Song[] = [
       "Me encanta la educación y por eso empecé a dar clases en 2018 a varios alumnos, ayudandolos con materias de electrónica o matemáticas. Con el paso del tiempo, fui conociendo nuevos alumnos y acomodando mis horarios para poder dar clases, estudiar y trabajar."],
   },
   {
-    id: 3,
+    id: 4,
     album: 2,
     name: ["Internship in Pentacom", "Pasantía en Pentacom"],
     image: "assets/pentacom.png",
@@ -132,7 +133,7 @@ export const songs: Song[] = [
       "En el último año del secundario, realicé una pasantia de trabajo en <a href='https://www.pentacom.com.ar/' style='text-decoration: none;color: inherit' target='_blank'><b>Pentacom</b></a>. Una empresa que realiza reparaciones de aparatos electrónicos, lo cual me permitió ver como se aplican en la realidad los contenidos técnicos vistos en el colegio."],
   },
   {
-    id: 4,
+    id: 5,
     album: 1,
     name: ["Computer Engineering", "Ingeniería en computación"],
     image: "assets/ucc.png",
@@ -142,7 +143,7 @@ export const songs: Song[] = [
       "Desde que entré al secundario técnico, ya sabía que iba a estudiar un carrera relacionada con la electrónica, y asi fue como años mas tarde, tomé la elección por <a href='https://www.ucc.edu.ar/facultades/ingenieria/' style='text-decoration: none;color: inherit' target='_blank'><b>ingeniería en computación</b></a>. Una carrera que relaciona todo lo que mas me gusta y encaja a la perfección con mis habilidades."],
   },
   {
-    id: 5,
+    id: 6,
     album: 1,
     name: ["High school", "Escuela secundaria"],
     image: "assets/highSchool.png",
@@ -152,7 +153,7 @@ export const songs: Song[] = [
       "Hice el secundario en el <a href='https://www.itsv.edu.ar/itsv/index.php' style='text-decoration: none;color: inherit' target='_blank'><b>Instituto Técnico Salesiano Villada</b></a>. Una escuela con orientación técnica en 3 areas: informática, electromecánica y electrónica. En cuarto año, tomé la desición de entrar a electrónica, donde aprendí gran parte de los conceptos y herraminetas que despues profundicé durante la carrera."],
   },
   {
-    id: 6,
+    id: 7,
     album: 1,
     name: ["Primary school", "Escuela primaria"],
     image: "assets/pias.png",
@@ -162,13 +163,13 @@ export const songs: Song[] = [
       "Mi escuela primaria la hice en <b>Escuelas Pías</b>, un colegio católico con orientación en ciencias sociales"],
   },
   {
-    id: 7,
+    id: 1,
     album: 3,
     name: ["ChordScript", "ChordScript"],
     image: "assets/cs.png",
     duration: ["2020", "2020"],
     description: [
-      "<a href='https://github.com/Antiloope/ChordScript' style='text-decoration: none;color: inherit' target='_blank'><b>ChordScript</b></a> is my thesis project. A powerful tool for music programming, based on 3 pillars: programming, music and education. If you are a musician interested in programming or a programmer interested in music, ChordScript is perfect for you",
+      "<a href='https://github.com/Antiloope/ChordScript' style='text-decoration: none;color: inherit' target='_blank'><b>ChordScript</b></a> is my thesis project. A tool for music programming, based on 3 pillars: programming, music and education. If you are a musician interested in programming or a programmer interested in music, ChordScript is perfect for you",
       "<a href='https://github.com/Antiloope/ChordScript' style='text-decoration: none;color: inherit' target='_blank'><b>ChordScript</b></a> es mi proyecto de tesis. Una herramienta para programar música, centrada en 3 pilares: programación, música y educación. Si sos músico y te interesa la programación o sos programador y te interesa la música, ChordScript es la herramienta perfecta"],
   },
 ]
