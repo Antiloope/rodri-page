@@ -133,5 +133,8 @@
       }
     }
   },
-  "defaultProject": "rodri-page"
+  "defaultProject": "rodri-page",
+  "cli": {
+    "analytics": "c456ea00-91e5-432a-9def-9654c3bff3f9"
+  }
 }

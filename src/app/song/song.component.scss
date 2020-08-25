@@ -65,16 +65,17 @@
   opacity: 0.5;
   margin-bottom: auto;
   margin-right: auto;
-  height: 80vmin;
-  width: 80vmin;
+  height: 85vmin;
+  width: 85vmin;
   max-width: 50vh;
   max-height: 50vh;
 }
 .description{
-  text-align: justify;
+  text-align: left;
+  word-spacing: 3px;
   position: absolute;
-  font-weight: normal;
-  width: 70vmin;
+  font-weight: lighter;
+  width: 80vmin;
   max-width: 45vh;
   text-overflow: clip;
   margin-left: auto;
@@ -120,11 +121,11 @@
   right: 100px;
   height: 5px;
   outline: none;
-  background-color: var(--color-secondary);
   -webkit-transition: .2s;
   transition: opacity .2s;
   border-radius: 100px;
-  background:linear-gradient(to right, var(--color-text) calc(0*1%), var(--color-secondary) 0); //Add variable to move shadow
+  //Add variable to move shadow
+  background: var(--color-secondary) linear-gradient(to right, var(--color-text) calc(0 * 1%), var(--color-secondary) 0);
 }
 
 .slider::-webkit-slider-thumb {

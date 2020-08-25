@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import {ActivatedRoute, Router} from "@angular/router";
-import {Playlist} from "../global-types";
-import {albums, lang, playlists, upDownAnimation} from "../global-content";
+import {ActivatedRoute, Router} from '@angular/router';
+import {Playlist} from '../global-types';
+import {albums, lang, playlists, upDownAnimation} from '../global-content';
 
 @Component({
   selector: 'app-playlist-view',
@@ -10,37 +10,37 @@ import {albums, lang, playlists, upDownAnimation} from "../global-content";
   animations: upDownAnimation,
 })
 export class PlaylistViewComponent implements OnInit {
-  langId:number;
-  texts:any = [];
+  langId: number;
+  texts: any = [];
   isOpen = false;
-  currentPlaylist:Playlist;
+  currentPlaylist: Playlist;
   toggle() {
-    (document.querySelector('#album') as HTMLElement).style.top = window.pageYOffset+"px";
-    if(this.isOpen){
-      document.body.style.overflow = "visible";
-      setTimeout(()=>{
+    (document.querySelector('#album') as HTMLElement).style.top = window.pageYOffset + 'px';
+    if (this.isOpen){
+      document.body.style.overflow = 'visible';
+      setTimeout(() => {
         this.router.navigate(['/']);
-      },400);
-      setTimeout(()=>{
+      }, 400);
+      setTimeout(() => {
         this.isOpen = false;
-      },1);
+      }, 1);
     }else{
-      document.body.style.overflow = "hidden";
-      setTimeout(()=>{
+      document.body.style.overflow = 'hidden';
+      setTimeout(() => {
         this.isOpen = true;
-      },1);
+      }, 1);
     }
   }
-  constructor(private router: Router,private route:ActivatedRoute) { }
+  constructor(private router: Router, private route: ActivatedRoute) { }
 
   ngOnInit(): void {
-    if (lang.split('-')[0]==='es')this.langId=1;
-    else this.langId=0;
+    if (lang.split('-')[0] === 'es') {this.langId = 1; }
+    else { this.langId = 0; }
     this.toggle();
     this.route.paramMap.subscribe(params => {
-      this.currentPlaylist = playlists.find(play => play.id===+params.get('id'));
+      this.currentPlaylist = playlists.find(play => play.id === +params.get('id'));
       document.getElementById('playlist-div').innerHTML = this.currentPlaylist.embedded;
-    })
+    });
   }
 
 }

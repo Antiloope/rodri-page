@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import {Playlist} from "../global-types";
-import {lang, playlists} from "../global-content";
+import {Playlist} from '../global-types';
+import {lang, playlists} from '../global-content';
 
 @Component({
   selector: 'app-playlists',
@@ -11,24 +11,24 @@ export class PlaylistsComponent implements OnInit {
 
   constructor() { }
 
-  langId:number;
-  texts:any=[
-    ["Playlists","Playlists"],
-  ]
-
-  ngOnInit(): void {
-    if (lang.split('-')[0]==='es'){
-      this.langId=1;
-    }else{
-      this.langId=0;
-    }
-  }
-  mySlideOptions={
-    autoWidth:true,
+  langId: number;
+  texts: any = [
+    ['Playlists', 'Playlists'],
+  ];
+  mySlideOptions = {
+    autoWidth: true,
     dots: false,
     nav: false,
     lazyLoad: true,
-    margin:20,
+    margin: 20,
   };
   playlists: Playlist[] = playlists;
+
+  ngOnInit(): void {
+    if (lang.split('-')[0] === 'es'){
+      this.langId = 1;
+    }else{
+      this.langId = 0;
+    }
+  }
 }

@@ -3,8 +3,8 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import {MatButtonModule} from "@angular/material/button";
-import {MatIconModule} from "@angular/material/icon";
+import {MatButtonModule} from '@angular/material/button';
+import {MatIconModule} from '@angular/material/icon';
 import { HeaderComponent } from './header/header.component';
 import { TopFiveComponent } from './top-five/top-five.component';
 import { ContactComponent } from './contact/contact.component';
@@ -45,7 +45,7 @@ const routes: Routes = [
     OwlModule,
     RouterModule.forRoot(routes),
   ],
-  exports:[RouterModule],
+  exports: [RouterModule],
   providers: [],
   bootstrap: [AppComponent]
 })
