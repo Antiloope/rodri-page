@@ -1,15 +1,17 @@
-.div-box{
+.div-box-over{
   position: absolute;
   margin-left: auto;
   margin-right: auto;
   left:0;
   right:0;
   top:10px;
+  font-weight: bold;
   width: 100%;
   min-height: 100vh;
   margin-top: 0;
   overflow: hidden;
   z-index: 1;
+  text-align: center;
 }
 
 .song-container{
@@ -190,5 +192,29 @@
   }
   .icons {
     margin-top: 3vh;
+  }
+}
+
+
+@media (min-width: 1700px) {
+  .div-box-over{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1600px;
+  }
+  .description{
+    font-size: 110%;
+  }
+  .footer-song-artist{
+    font-size: 16px;
+  }
+  .footer-song-title{
+    font-size: 20px;
+  }
+  .footer-duration-right{
+    font-size: 16px;
+  }
+  .footer-duration-left{
+    font-size: 16px;
   }
 }

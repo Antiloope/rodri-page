@@ -133,3 +133,15 @@
   color: var(--color-text);
   background-color: rgba(0,0,0,0.3);
 }
+
+@media (min-width: 1700px) {
+  .background-image {
+    margin-bottom: -200px;
+  }
+  .profile-img{
+    max-width: 300%;
+    max-height: 600px;
+    zoom: 120%;
+  }
+
+}

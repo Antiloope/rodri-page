@@ -1,12 +1,22 @@
 .content-grid{
   display: grid;
 }
+
 @media (min-width: 800px) {
   .content-grid {
     grid-template-columns: 500px 300px;
     margin-right: auto;
     margin-left: auto;
     width: 800px;
+  }
+}
+
+@media (min-width: 1700px) {
+  .content-grid {
+    grid-template-columns: 1050px 650px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 1700px;
   }
 }
 

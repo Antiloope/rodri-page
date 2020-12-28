@@ -137,7 +137,7 @@ export const songs: Song[] = [
     album: 1,
     name: ['Computer Engineering', 'Ingeniería en computación'],
     image: 'assets/ucc.png',
-    duration: ['2017 - today', '2017 - actualidad'],
+    duration: ['2017 - 2020', '2017 - 2020'],
     description: [
       'Since I entered technical oriented high school, I knew I was going to study any career related with electronics, and that\'s how years later, I chose <a href=\'https://www.ucc.edu.ar/facultades/ingenieria/\' style=\'text-decoration: none;color: #4778f5\' target=\'_blank\'><b>computer engineering</b></a>. A degree that relates everything I like and fits perfectly with my abilities.',
       'Desde que entré al secundario técnico, ya sabía que iba a estudiar un carrera relacionada con la electrónica, y asi fue como años mas tarde, tomé la elección por <a href=\'https://www.ucc.edu.ar/facultades/ingenieria/\' style=\'text-decoration: none;color: #4778f5\' target=\'_blank\'><b>ingeniería en computación</b></a>. Una carrera que relaciona todo lo que mas me gusta y encaja a la perfección con mis habilidades.'],
@@ -169,8 +169,8 @@ export const songs: Song[] = [
     image: 'assets/cs.png',
     duration: ['2020', '2020'],
     description: [
-      '<a href=\'https://github.com/Antiloope/ChordScript\' style=\'text-decoration: none;color: #4778f5\' target=\'_blank\'><b>ChordScript</b></a> is my thesis project. A tool for music programming that merge my three passions: music, programming and learning. Available at the end of the year!',
-      '<a href=\'https://github.com/Antiloope/ChordScript\' style=\'text-decoration: none;color: #4778f5\' target=\'_blank\'><b>ChordScript</b></a> es mi proyecto de tesis. Una herramienta para programar música que junta mis 3 pasiones: la musica, la programación y el aprendizaje. Disponible a fin de año!'],
+      '<a href=\'https://github.com/Antiloope/ChordScript\' style=\'text-decoration: none;color: #4778f5\' target=\'_blank\'><b>ChordScript</b></a> is my thesis project. A programming language for coding music that merge my three passions: music, programming and education. Downloads available now!',
+      '<a href=\'https://github.com/Antiloope/ChordScript\' style=\'text-decoration: none;color: #4778f5\' target=\'_blank\'><b>ChordScript</b></a> es mi proyecto de tesis. Un lenguaje para programar música que junta mis 3 pasiones: la musica, la programación y la educación. Disponible para descargar!'],
   },
 ];
 export const lang: string = navigator.language;

@@ -58,3 +58,22 @@
     width: 180px;
   }
 }
+@media (min-width: 1700px) {
+  .title-div {
+    margin-left: 0;
+    max-width: 400px;
+    font-size: x-large;
+  }
+  .exp-holder{
+    grid-template-columns: 50px 10px repeat(auto-fit, minmax(100px,1fr));
+  }
+  .album-title{
+    font-size: 15px;
+  }
+  .album-subtitle{
+    font-size: 13px;
+  }
+  .album-container-div{
+    margin-top:20px;
+  }
+}

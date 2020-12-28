@@ -7,9 +7,8 @@
   margin-top: 35px;
 }
 .exp-list{
-  margin: 0px;
-  margin-top: 10px;
-  padding-inline-start: 0px;
+  margin: 10px 0 0;
+  padding-inline-start: 0;
   list-style-type: none;
 }
 .exp-holder:hover{
@@ -90,5 +89,16 @@
     margin-left: 6px;
     padding-top: 3px;
     height: fit-content;
+  }
+}
+
+@media (min-width: 1700px) {
+  .title-div{
+    margin-right: 0;
+    max-width: 700px;
+    font-size: x-large;
+  }
+  .exp-holder{
+    grid-template-columns: 50px 10px repeat(auto-fit, minmax(100px,1fr));
   }
 }
