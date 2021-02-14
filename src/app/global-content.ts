@@ -38,9 +38,9 @@ export const playlists: Playlist[] = [
   {
     id: 5,
     image: 'assets/playlist2.png',
-    title: ['Classicism', 'Clasicismo'],
+    title: ['Bass', 'Bass'],
     subtitle: [' ', ' '],
-    embedded: '<iframe style="height: inherit;width: inherit" src="https://open.spotify.com/embed/playlist/4ie5YFRRj3EZe8KtrSQOAj" width="inherit" height="inherit" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>',
+    embedded: '<iframe style="height: inherit;width: inherit" src="https://open.spotify.com/embed/playlist/3yFGjbYTsk86x68R0f5Ha7" width="inherit" height="inherit" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>',
   },
   {
     id: 4,
@@ -103,27 +103,27 @@ export const albums: Album[] = [
 ];
 export const songs: Song[] = [
   {
-    id: 2,
+    id: 3,
     album: 2,
     name: ['Siges', 'Siges'],
     image: 'assets/siges.png',
-    duration: ['2019 (July) - today', '2019 (Julio) - actualidad'],
+    duration: ['2019 (July) - 2021 (January)', '2019 (Julio) - 2021 (Enero)'],
     description: [
       'I work at <a href=\'https://www.linkedin.com/company/sistemasiges/about/\' style=\'text-decoration: none;color: #4778f5\' target=\'_blank\'><b>SIGES SA</b></a>, a company that produce and manage its own integral management software for service stations. As developer in charge of integration projects of new technologies as Mercado Pago, YPF app and other projects in C# (.NET) and MSSQL.',
-      'Trabajo en <a href=\'https://www.linkedin.com/company/sistemasiges/about/\' style=\'text-decoration: none;color: #4778f5\' target=\'_blank\'><b>SIGES SA</b></a>, empresa que produce y administra un software propio para gestión integral de estaciones de servicio. Mi cargo es de desarrollador a cargo de proyectos de integración de nuevas tecnologias como Mercado Pago, APP de YPF y otros desarrollos en C# (.NET) y MSSQL.'],
+      'Trabajé en <a href=\'https://www.linkedin.com/company/sistemasiges/about/\' style=\'text-decoration: none;color: #4778f5\' target=\'_blank\'><b>SIGES SA</b></a>, empresa que produce y administra un software propio para gestión integral de estaciones de servicio. Mi cargo fue como desarrollador a cargo de proyectos de integración con nuevas tecnologias como Mercado Pago, APP de YPF y otros desarrollos en C# (.NET) y MSSQL.'],
   },
   {
-    id: 3,
+    id: 4,
     album: 2,
     name: ['School support classes', 'Clases de apoyo escolar'],
     image: 'assets/school.png',
-    duration: ['2018 - today', '2018 - actualidad'],
+    duration: ['2018 - 2020', '2018 - 2020'],
     description: [
       'I love education and for this reason I started teaching a group of students in 2018, helping them with subjects like electronics or mathematics. Over time, I met more students and managed to accommodate my schedules to continue giving private lessons, working and studying.',
       'Me encanta la educación y por eso empecé a dar clases en 2018 a varios alumnos, ayudandolos con materias de electrónica o matemáticas. Con el paso del tiempo, fui conociendo nuevos alumnos y acomodando mis horarios para poder dar clases, estudiar y trabajar.'],
   },
   {
-    id: 4,
+    id: 5,
     album: 2,
     name: ['Internship in Pentacom', 'Pasantía en Pentacom'],
     image: 'assets/pentacom.png',
@@ -133,7 +133,7 @@ export const songs: Song[] = [
       'En el último año del secundario, realicé una pasantia de trabajo en <a href=\'https://www.pentacom.com.ar/\' style=\'text-decoration: none;color: #4778f5\' target=\'_blank\'><b>Pentacom</b></a>. Una empresa que realiza reparaciones de aparatos electrónicos, lo cual me permitió ver como se aplican en la realidad los contenidos técnicos vistos en el colegio.'],
   },
   {
-    id: 5,
+    id: 2,
     album: 1,
     name: ['Computer Engineering', 'Ingeniería en computación'],
     image: 'assets/ucc.png',

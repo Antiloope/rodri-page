@@ -1,5 +1,8 @@
 <div class="background-image" id="image">
-  <img src="assets/profile.png" class="profile-img">
+  <picture>
+    <source srcset="assets/profile-low.png" media="(max-width: 600px)" class="profile-img">
+    <img src="assets/profile.png" class="profile-img" alt="profile picture">
+  </picture>
 </div>
 
 <div class="title-div" (scroll)="onScroll($event)">
