@@ -103,7 +103,7 @@ export const albums: Album[] = [
 ];
 export const songs: Song[] = [
   {
-    id: 3,
+    id: 4,
     album: 2,
     name: ['Siges', 'Siges'],
     image: 'assets/siges.png',
@@ -113,7 +113,7 @@ export const songs: Song[] = [
       'Trabajé en <a href=\'https://www.linkedin.com/company/sistemasiges/about/\' style=\'text-decoration: none;color: #4778f5\' target=\'_blank\'><b>SIGES SA</b></a>, empresa que produce y administra un software propio para gestión integral de estaciones de servicio. Mi cargo fue como desarrollador a cargo de proyectos de integración con nuevas tecnologias como Mercado Pago, APP de YPF y otros desarrollos en C# (.NET) y MSSQL.'],
   },
   {
-    id: 4,
+    id: 5,
     album: 2,
     name: ['School support classes', 'Clases de apoyo escolar'],
     image: 'assets/school.png',
@@ -123,7 +123,7 @@ export const songs: Song[] = [
       'Me encanta la educación y por eso empecé a dar clases en 2018 a varios alumnos, ayudandolos con materias de electrónica o matemáticas. Con el paso del tiempo, fui conociendo nuevos alumnos y acomodando mis horarios para poder dar clases, estudiar y trabajar.'],
   },
   {
-    id: 5,
+    id: 6,
     album: 2,
     name: ['Internship in Pentacom', 'Pasantía en Pentacom'],
     image: 'assets/pentacom.png',
@@ -133,7 +133,7 @@ export const songs: Song[] = [
       'En el último año del secundario, realicé una pasantia de trabajo en <a href=\'https://www.pentacom.com.ar/\' style=\'text-decoration: none;color: #4778f5\' target=\'_blank\'><b>Pentacom</b></a>. Una empresa que realiza reparaciones de aparatos electrónicos, lo cual me permitió ver como se aplican en la realidad los contenidos técnicos vistos en el colegio.'],
   },
   {
-    id: 2,
+    id: 3,
     album: 1,
     name: ['Computer Engineering', 'Ingeniería en computación'],
     image: 'assets/ucc.png',
@@ -143,7 +143,7 @@ export const songs: Song[] = [
       'Desde que entré al secundario técnico, ya sabía que iba a estudiar un carrera relacionada con la electrónica, y asi fue como años mas tarde, tomé la elección por <a href=\'https://www.ucc.edu.ar/facultades/ingenieria/\' style=\'text-decoration: none;color: #4778f5\' target=\'_blank\'><b>ingeniería en computación</b></a>. Una carrera que relaciona todo lo que mas me gusta y encaja a la perfección con mis habilidades.'],
   },
   {
-    id: 6,
+    id: 7,
     album: 1,
     name: ['High school', 'Escuela secundaria'],
     image: 'assets/highSchool.png',
@@ -153,7 +153,7 @@ export const songs: Song[] = [
       'Hice el secundario en el <a href=\'https://www.itsv.edu.ar/itsv/index.php\' style=\'text-decoration: none;color: #4778f5\' target=\'_blank\'><b>Instituto Técnico Salesiano Villada</b></a>. Una escuela con orientación técnica en 3 areas: informática, electromecánica y electrónica. En cuarto año, tomé la desición de entrar a electrónica, donde aprendí gran parte de los conceptos y herraminetas que despues profundicé durante la carrera.'],
   },
   {
-    id: 7,
+    id: 8,
     album: 1,
     name: ['Primary school', 'Escuela primaria'],
     image: 'assets/pias.png',
@@ -163,7 +163,7 @@ export const songs: Song[] = [
       'Mi escuela primaria la hice en <b>Escuelas Pías</b>, un colegio católico con orientación en ciencias sociales'],
   },
   {
-    id: 1,
+    id: 2,
     album: 3,
     name: ['ChordScript', 'ChordScript'],
     image: 'assets/cs.png',
@@ -171,6 +171,16 @@ export const songs: Song[] = [
     description: [
       '<a href=\'https://github.com/Antiloope/ChordScript\' style=\'text-decoration: none;color: #4778f5\' target=\'_blank\'><b>ChordScript</b></a> is my thesis project. A programming language for coding music that merge my three passions: music, programming and education. Downloads available now!',
       '<a href=\'https://github.com/Antiloope/ChordScript\' style=\'text-decoration: none;color: #4778f5\' target=\'_blank\'><b>ChordScript</b></a> es mi proyecto de tesis. Un lenguaje para programar música que junta mis 3 pasiones: la musica, la programación y la educación. Disponible para descargar!'],
+  },
+  {
+    id: 1,
+    album: 2,
+    name: ['Mercado Libre', 'Mercado Libre'],
+    image: 'assets/meli.png',
+    duration: ['2021 (February) - today', '2021 (Febrero) - actualidad'],
+    description: [
+      'Im currently working in the Shipping unit of <a href=\'https://mercadolibre.com/\' style=\'text-decoration: none;color: #4778f5\' target=\'_blank\'><b>Mercado Libre</b></a>, e-commerce #1 in latin america. My position is as software development analyst in the fulfilment area, using Java as backend language',
+      'Actualmente trabajo en el area de Shipping de <a href=\'https://mercadolibre.com/\' style=\'text-decoration: none;color: #4778f5\' target=\'_blank\'><b>Mercado Libre</b></a>, e-commerce #1 en américa latina. Mi cargo es de analista de desarrollo en la sub area de fulfilment utilizando Java como lenguaje de backend'],
   },
 ];
 export const lang: string = navigator.language;
