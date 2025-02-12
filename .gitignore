@@ -44,3 +44,10 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db
+
+# Docker
+.docker
+docker-compose.override.yml
+
+# Angular
+.angular
