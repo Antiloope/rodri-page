@@ -3,6 +3,7 @@ import {Album} from '../global-types';
 import {albums, lang} from '../global-content';
 
 @Component({
+  standalone: false,
   selector: 'app-albums',
   templateUrl: './albums.component.html',
   styleUrls: ['./albums.component.scss']

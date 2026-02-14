@@ -2,6 +2,7 @@ import {Component, HostListener, OnInit} from '@angular/core';
 import {lang} from '../global-content';
 
 @Component({
+  standalone: false,
   selector: 'app-header',
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss']

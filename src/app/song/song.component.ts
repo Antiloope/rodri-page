@@ -3,6 +3,7 @@ import {ActivatedRoute, Router} from '@angular/router';
 import {albums, lang, songs, upDownAnimation} from '../global-content';
 
 @Component({
+  standalone: false,
   selector: 'app-song',
   templateUrl: './song.component.html',
   styleUrls: ['./song.component.scss'],

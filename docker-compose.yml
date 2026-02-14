@@ -1,0 +1,7 @@
+services:
+  build:
+    build:
+      context: .
+    # Mount local dist/ so compiled output lands on the host
+    volumes:
+      - ./dist:/app/dist

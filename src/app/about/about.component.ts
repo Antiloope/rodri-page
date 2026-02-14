@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import {lang} from '../global-content';
 
 @Component({
+  standalone: false,
   selector: 'app-about',
   templateUrl: './about.component.html',
   styleUrls: ['./about.component.scss']

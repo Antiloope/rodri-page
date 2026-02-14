@@ -4,6 +4,7 @@ import {Song} from '../global-types';
 import {albums, lang, songs, upDownAnimation} from '../global-content';
 
 @Component({
+  standalone: false,
   selector: 'app-album-view',
   templateUrl: './album-view.component.html',
   styleUrls: ['./album-view.component.scss'],

@@ -4,6 +4,7 @@ import {Playlist} from '../global-types';
 import {albums, lang, playlists, upDownAnimation} from '../global-content';
 
 @Component({
+  standalone: false,
   selector: 'app-playlist-view',
   templateUrl: './playlist-view.component.html',
   styleUrls: ['./playlist-view.component.scss'],

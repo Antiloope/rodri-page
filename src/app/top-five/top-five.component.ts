@@ -4,6 +4,7 @@ import {Song} from '../global-types';
 import {lang, songs} from '../global-content';
 
 @Component({
+  standalone: false,
   selector: 'app-top-five',
   templateUrl: './top-five.component.html',
   styleUrls: ['./top-five.component.scss']

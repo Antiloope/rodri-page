@@ -3,6 +3,7 @@ import {Playlist} from '../global-types';
 import {lang, playlists} from '../global-content';
 
 @Component({
+  standalone: false,
   selector: 'app-playlists',
   templateUrl: './playlists.component.html',
   styleUrls: ['./playlists.component.scss']
