@@ -1,0 +1,7 @@
+{
+  "approved": true,
+  "id": "comp-stage-header",
+  "title": "Stage header",
+  "prompt": "Spotify Web artist page composition: sidebar + full-bleed panoramic hero, huge name bottom-left, Play/Follow under hero, Popular + Contact columns, album shelf, now-playing dock.",
+  "path": ".impeccable/mocks/comp-stage-header.png"
+}

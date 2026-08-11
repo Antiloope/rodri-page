@@ -1,0 +1,192 @@
+:host {
+  display: block;
+  height: 100%;
+}
+
+.os {
+  display: grid;
+  grid-template-areas:
+    'nav main'
+    'now now';
+  grid-template-columns: var(--sidebar) minmax(0, 1fr);
+  grid-template-rows: minmax(0, 1fr) var(--player);
+  gap: var(--gap);
+  height: 100dvh;
+  overflow: hidden;
+  padding: var(--gap);
+  background: var(--bg-void);
+}
+
+.nav,
+.main {
+  min-height: 0;
+  background: var(--bg-base);
+  border-radius: var(--radius-pane);
+}
+
+.nav {
+  grid-area: nav;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 12px;
+  overflow: auto;
+}
+
+.nav-link {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  width: 100%;
+  min-height: 40px;
+  padding: 4px 12px;
+  border-radius: 4px;
+  color: var(--text-sub);
+  font-size: var(--type-title);
+  font-weight: 700;
+  text-align: left;
+  text-decoration: none;
+  transition: color 160ms var(--ease), background 160ms var(--ease), transform 160ms var(--ease);
+}
+
+.nav-link app-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.nav-link:hover,
+.nav-link.is-on {
+  color: var(--text);
+}
+
+.nav-link:hover {
+  background: rgb(255 255 255 / 6%);
+}
+
+.nav-link:active {
+  transform: scale(0.98);
+}
+
+.stage {
+  min-height: 0;
+}
+
+.stage > :not(router-outlet) {
+  display: block;
+}
+
+.stage.sheet-enter > :not(router-outlet) {
+  animation: sheet-open 0.4s cubic-bezier(0, 0, 0.42, 1.02) both;
+}
+
+.stage.sheet-leave > :not(router-outlet) {
+  animation: sheet-close 0.4s cubic-bezier(0, 0, 0.42, 1.02) both;
+}
+
+@keyframes sheet-open {
+  from {
+    transform: translateY(18%);
+    opacity: 0.35;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes sheet-close {
+  from {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateY(22%);
+    opacity: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .stage.sheet-enter > :not(router-outlet),
+  .stage.sheet-leave > :not(router-outlet) {
+    animation: none;
+  }
+}
+
+.nav-link.is-soft {
+  font-size: var(--type-body);
+  font-weight: 500;
+}
+
+.nav-rule {
+  height: 1px;
+  margin: 8px 12px;
+  background: rgb(255 255 255 / 10%);
+}
+
+.main {
+  grid-area: main;
+  overflow: auto;
+}
+
+app-now-playing {
+  grid-area: now;
+}
+
+.tabs {
+  display: none;
+}
+
+@media (max-width: 900px) {
+  .os {
+    grid-template-areas:
+      'main'
+      'now'
+      'tabs';
+    grid-template-columns: 1fr;
+    grid-template-rows: minmax(0, 1fr) 64px var(--tabs);
+    gap: 0;
+    padding: 0;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .main,
+  .nav {
+    border-radius: 0;
+  }
+
+  .tabs {
+    display: grid;
+    grid-area: tabs;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: end;
+    background: #000;
+    padding: 6px 8px calc(10px + env(safe-area-inset-bottom));
+  }
+
+  .tabs button {
+    display: grid;
+    justify-items: center;
+    gap: 4px;
+    color: var(--text-sub);
+    font-size: 10px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: color 160ms var(--ease), transform 160ms var(--ease);
+  }
+
+  .tabs button:active {
+    transform: scale(0.96);
+  }
+
+  .tabs app-icon {
+    width: 24px;
+    height: 24px;
+  }
+
+  .tabs .is-on {
+    color: var(--text);
+  }
+}

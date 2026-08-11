@@ -1,0 +1,58 @@
+<div class="os">
+  <aside class="nav" aria-label="Library">
+    <button type="button" class="nav-link" [class.is-on]="atHome()" (click)="goHome()">
+      <app-icon name="home" />
+      <span>{{ t(copy.home) }}</span>
+    </button>
+    <button type="button" class="nav-link" (click)="go('popular')">
+      <app-icon name="search" />
+      <span>{{ t(copy.popular) }}</span>
+    </button>
+    <button type="button" class="nav-link" (click)="go('albums')">
+      <app-icon name="library" />
+      <span>{{ t(copy.albums) }}</span>
+    </button>
+    <div class="nav-rule"></div>
+    <button type="button" class="nav-link is-soft" (click)="go('playlists')">
+      <span>{{ t(copy.playlists) }}</span>
+    </button>
+    <button type="button" class="nav-link is-soft" (click)="go('about')">
+      <span>{{ t(copy.about) }}</span>
+    </button>
+    <button type="button" class="nav-link is-soft" (click)="go('contact')">
+      <span>{{ t(copy.contact) }}</span>
+    </button>
+  </aside>
+
+  <main class="main" id="main">
+    <app-topbar />
+    <div
+      class="stage"
+      [class.sheet-enter]="sheet.phase() === 'enter'"
+      [class.sheet-leave]="sheet.phase() === 'leave'"
+    >
+      <router-outlet />
+    </div>
+  </main>
+
+  <app-now-playing />
+
+  <nav class="tabs" aria-label="Mobile">
+    <button type="button" [class.is-on]="atHome()" (click)="goHome()">
+      <app-icon name="home" />
+      <span>{{ t(copy.home) }}</span>
+    </button>
+    <button type="button" (click)="go('popular')">
+      <app-icon name="search" />
+      <span>{{ t(copy.popular) }}</span>
+    </button>
+    <button type="button" (click)="go('albums')">
+      <app-icon name="library" />
+      <span>{{ t(copy.albums) }}</span>
+    </button>
+  </nav>
+</div>
+
+@if (message(); as text) {
+  <div class="toast" role="status">{{ text }}</div>
+}

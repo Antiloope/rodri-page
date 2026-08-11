@@ -1,0 +1,12 @@
+node_modules
+dist
+.angular
+.scaffold-angular
+.git
+.github
+.impeccable
+.claude
+*.md
+e2e
+coverage
+.DS_Store

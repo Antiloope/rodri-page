@@ -1,0 +1,387 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-08-11T21:52:00.000Z",
+  "title": "Design System: Rodrigo Pizarro",
+  "extensions": {
+    "colorMeta": {
+      "green": {
+        "role": "primary",
+        "displayName": "Play Green",
+        "canonical": "#1ed760",
+        "tonalRamp": [
+          "oklch(15% 0.08 145)",
+          "oklch(28% 0.12 145)",
+          "oklch(42% 0.15 145)",
+          "oklch(55% 0.16 145)",
+          "oklch(68% 0.17 145)",
+          "oklch(78% 0.17 145)",
+          "oklch(88% 0.10 145)",
+          "oklch(95% 0.04 145)"
+        ]
+      },
+      "green-hover": {
+        "role": "primary",
+        "displayName": "Play Green Hover",
+        "canonical": "#3be477",
+        "tonalRamp": [
+          "oklch(15% 0.08 145)",
+          "oklch(30% 0.12 145)",
+          "oklch(45% 0.15 145)",
+          "oklch(58% 0.16 145)",
+          "oklch(72% 0.16 145)",
+          "oklch(82% 0.15 145)",
+          "oklch(90% 0.08 145)",
+          "oklch(96% 0.03 145)"
+        ]
+      },
+      "green-press": {
+        "role": "primary",
+        "displayName": "Play Green Press",
+        "canonical": "#1abc54",
+        "tonalRamp": [
+          "oklch(15% 0.08 145)",
+          "oklch(26% 0.12 145)",
+          "oklch(38% 0.15 145)",
+          "oklch(50% 0.16 145)",
+          "oklch(62% 0.16 145)",
+          "oklch(72% 0.15 145)",
+          "oklch(86% 0.08 145)",
+          "oklch(95% 0.03 145)"
+        ]
+      },
+      "blue-badge": {
+        "role": "secondary",
+        "displayName": "Verified Blue",
+        "canonical": "#4cb3ff",
+        "tonalRamp": [
+          "oklch(18% 0.08 240)",
+          "oklch(30% 0.11 240)",
+          "oklch(42% 0.13 240)",
+          "oklch(54% 0.14 240)",
+          "oklch(66% 0.14 240)",
+          "oklch(76% 0.13 240)",
+          "oklch(88% 0.07 240)",
+          "oklch(95% 0.03 240)"
+        ]
+      },
+      "bg-void": {
+        "role": "neutral",
+        "displayName": "Void",
+        "canonical": "#000000",
+        "tonalRamp": [
+          "oklch(0% 0 0)",
+          "oklch(8% 0 0)",
+          "oklch(15% 0 0)",
+          "oklch(28% 0 0)",
+          "oklch(45% 0 0)",
+          "oklch(62% 0 0)",
+          "oklch(80% 0 0)",
+          "oklch(95% 0 0)"
+        ]
+      },
+      "bg-base": {
+        "role": "neutral",
+        "displayName": "Pane",
+        "canonical": "#121212",
+        "tonalRamp": [
+          "oklch(8% 0 0)",
+          "oklch(15% 0 0)",
+          "oklch(22% 0 0)",
+          "oklch(32% 0 0)",
+          "oklch(48% 0 0)",
+          "oklch(64% 0 0)",
+          "oklch(80% 0 0)",
+          "oklch(95% 0 0)"
+        ]
+      },
+      "bg-elevated": {
+        "role": "neutral",
+        "displayName": "Elevated",
+        "canonical": "#181818",
+        "tonalRamp": [
+          "oklch(10% 0 0)",
+          "oklch(18% 0 0)",
+          "oklch(26% 0 0)",
+          "oklch(36% 0 0)",
+          "oklch(50% 0 0)",
+          "oklch(66% 0 0)",
+          "oklch(82% 0 0)",
+          "oklch(95% 0 0)"
+        ]
+      },
+      "bg-press": {
+        "role": "neutral",
+        "displayName": "Press",
+        "canonical": "#2a2a2a",
+        "tonalRamp": [
+          "oklch(12% 0 0)",
+          "oklch(20% 0 0)",
+          "oklch(28% 0 0)",
+          "oklch(38% 0 0)",
+          "oklch(52% 0 0)",
+          "oklch(68% 0 0)",
+          "oklch(84% 0 0)",
+          "oklch(96% 0 0)"
+        ]
+      },
+      "text": {
+        "role": "neutral",
+        "displayName": "White",
+        "canonical": "#ffffff",
+        "tonalRamp": [
+          "oklch(20% 0 0)",
+          "oklch(35% 0 0)",
+          "oklch(50% 0 0)",
+          "oklch(65% 0 0)",
+          "oklch(78% 0 0)",
+          "oklch(88% 0 0)",
+          "oklch(94% 0 0)",
+          "oklch(100% 0 0)"
+        ]
+      },
+      "text-sub": {
+        "role": "neutral",
+        "displayName": "Silver",
+        "canonical": "#b3b3b3",
+        "tonalRamp": [
+          "oklch(18% 0 0)",
+          "oklch(30% 0 0)",
+          "oklch(42% 0 0)",
+          "oklch(54% 0 0)",
+          "oklch(66% 0 0)",
+          "oklch(76% 0 0)",
+          "oklch(88% 0 0)",
+          "oklch(96% 0 0)"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Ink",
+        "canonical": "#0d0d0d",
+        "tonalRamp": [
+          "oklch(8% 0 0)",
+          "oklch(16% 0 0)",
+          "oklch(28% 0 0)",
+          "oklch(42% 0 0)",
+          "oklch(58% 0 0)",
+          "oklch(72% 0 0)",
+          "oklch(86% 0 0)",
+          "oklch(96% 0 0)"
+        ]
+      },
+      "text-soft": {
+        "role": "neutral",
+        "displayName": "Soft White",
+        "canonical": "#eaeaea",
+        "tonalRamp": [
+          "oklch(20% 0 0)",
+          "oklch(35% 0 0)",
+          "oklch(50% 0 0)",
+          "oklch(64% 0 0)",
+          "oklch(76% 0 0)",
+          "oklch(86% 0 0)",
+          "oklch(92% 0 0)",
+          "oklch(97% 0 0)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Artist name on the hero photograph only."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Song, album, and playlist titles on their own routes."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Section heads: Popular, Contact, Albums, Playlists, About."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Default UI, verified row, listeners, track meta, pills."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Dock artist line, timeline times, and compact chrome."
+      }
+    },
+    "shadows": [
+      {
+        "name": "shelf-cover",
+        "value": "0 8px 24px rgb(0 0 0 / 50%)",
+        "purpose": "Resting album and playlist cards."
+      },
+      {
+        "name": "record-cover",
+        "value": "0 16px 40px rgb(0 0 0 / 50%)",
+        "purpose": "Song and album detail art."
+      },
+      {
+        "name": "playlist-cover",
+        "value": "0 12px 32px rgb(0 0 0 / 50%)",
+        "purpose": "Playlist-route art."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease",
+        "value": "cubic-bezier(0.3, 0, 0, 1)",
+        "purpose": "Spotify exponential ease for play, pills, and shelf reveal."
+      },
+      {
+        "name": "press",
+        "value": "120ms",
+        "purpose": "Play disc and pill scale/color."
+      },
+      {
+        "name": "reveal",
+        "value": "160ms",
+        "purpose": "Shelf play disc rising into view."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "stack",
+        "value": "700px"
+      },
+      {
+        "name": "shell",
+        "value": "900px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Play Disc",
+      "kind": "button",
+      "refersTo": "play-disc",
+      "description": "Green 56px circle that starts Popular or toggles the current track.",
+      "html": "<button class=\"ds-play-disc\" type=\"button\" aria-label=\"Play\"><svg viewBox=\"0 0 24 24\" width=\"24\" height=\"24\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M8 5.14v13.72a1 1 0 0 0 1.5.86l11-6.86a1 1 0 0 0 0-1.72l-11-6.86a1 1 0 0 0-1.5.86Z\"/></svg></button>",
+      "css": ".ds-play-disc { display: grid; place-items: center; width: var(--play, 56px); height: var(--play, 56px); border: 0; border-radius: 50%; background: var(--green, #1ed760); color: #0d0d0d; cursor: pointer; transition: transform 120ms var(--ease, cubic-bezier(0.3, 0, 0, 1)), background 120ms var(--ease, cubic-bezier(0.3, 0, 0, 1)); } .ds-play-disc svg { margin-left: 2px; } .ds-play-disc:hover { transform: scale(1.04); background: var(--green-hover, #3be477); } .ds-play-disc:active { transform: scale(1); background: var(--green-press, #1abc54); } .ds-play-disc:focus-visible { outline: 2px solid var(--text, #fff); outline-offset: 3px; }"
+    },
+    {
+      "name": "Follow Pill",
+      "kind": "button",
+      "refersTo": "pill",
+      "description": "White-stroke pill that opens LinkedIn; copy flips to Following.",
+      "html": "<button class=\"ds-pill\" type=\"button\">Follow</button>",
+      "css": ".ds-pill { display: inline-flex; align-items: center; justify-content: center; min-height: 32px; padding: 3px 15px; border: 1px solid var(--text, #fff); border-radius: var(--radius-pill, 999px); background: transparent; color: var(--text, #fff); font-family: var(--font, Satoshi, Helvetica Neue, Helvetica, Arial, sans-serif); font-size: var(--type-body, 0.875rem); font-weight: 700; letter-spacing: 0.01em; cursor: pointer; transition: transform 120ms var(--ease, cubic-bezier(0.3, 0, 0, 1)), background 120ms var(--ease, cubic-bezier(0.3, 0, 0, 1)); } .ds-pill:hover { transform: scale(1.04); background: rgb(255 255 255 / 8%); } .ds-pill:focus-visible { outline: 2px solid var(--text, #fff); outline-offset: 3px; }"
+    },
+    {
+      "name": "Language Chip",
+      "kind": "chip",
+      "refersTo": "lang-on",
+      "description": "EN/ES capsule in the sticky top bar.",
+      "html": "<div class=\"ds-lang\" role=\"group\" aria-label=\"Language\"><button type=\"button\" class=\"is-on\">EN</button><span aria-hidden=\"true\">|</span><button type=\"button\">ES</button></div>",
+      "css": ".ds-lang { display: flex; padding: 3px; border: 1px solid rgb(255 255 255 / 18%); border-radius: 999px; background: rgb(0 0 0 / 72%); } .ds-lang button { min-width: 40px; height: 28px; border: 0; border-radius: 999px; background: transparent; color: #fff; font-family: var(--font, Satoshi, Helvetica Neue, Helvetica, Arial, sans-serif); font-size: 12px; font-weight: 700; letter-spacing: 0.04em; cursor: pointer; } .ds-lang .is-on { background: #fff; color: #0d0d0d; } .ds-lang button:hover:not(.is-on) { color: #fff; } .ds-lang button:focus-visible { outline: 2px solid #fff; outline-offset: 2px; }"
+    },
+    {
+      "name": "Track Row",
+      "kind": "custom",
+      "refersTo": "track-row",
+      "description": "Popular / album list row; current state turns name and index play green.",
+      "html": "<a class=\"ds-track-row is-current\" href=\"#\"><span class=\"ds-track-index\">1</span><span class=\"ds-track-cover\"></span><span class=\"ds-track-name\">Mercado Libre</span><span class=\"ds-track-meta\">2021 — today</span></a>",
+      "css": ".ds-track-row { display: grid; grid-template-columns: 24px 40px minmax(0, 1fr) auto; gap: 12px; align-items: center; min-height: 48px; padding: 0 12px; border-radius: 4px; color: inherit; text-decoration: none; font-family: var(--font, Satoshi, Helvetica Neue, Helvetica, Arial, sans-serif); } .ds-track-row:hover, .ds-track-row:focus-visible { background: rgb(255 255 255 / 10%); } .ds-track-row:focus-visible { outline: 2px solid #fff; outline-offset: 3px; } .ds-track-row.is-current { color: var(--green, #1ed760); } .ds-track-index { color: var(--text-sub, #b3b3b3); font-size: 0.875rem; text-align: right; } .ds-track-row.is-current .ds-track-index { color: var(--green, #1ed760); } .ds-track-cover { width: 40px; height: 40px; border-radius: 4px; background: var(--bg-press, #2a2a2a); } .ds-track-name { overflow: hidden; font-size: 1rem; font-weight: 400; text-overflow: ellipsis; white-space: nowrap; } .ds-track-meta { color: var(--text-sub, #b3b3b3); font-size: 0.875rem; white-space: nowrap; }"
+    },
+    {
+      "name": "Shelf Card",
+      "kind": "card",
+      "refersTo": "play-disc",
+      "description": "Album or playlist card with a rising play disc on hover.",
+      "html": "<a class=\"ds-shelf-card\" href=\"#\"><div class=\"ds-shelf-cover-wrap\"><div class=\"ds-shelf-cover\"></div><span class=\"ds-shelf-play\"><svg viewBox=\"0 0 24 24\" width=\"20\" height=\"20\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M8 5.14v13.72a1 1 0 0 0 1.5.86l11-6.86a1 1 0 0 0 0-1.72l-11-6.86a1 1 0 0 0-1.5.86Z\"/></svg></span></div><div class=\"ds-shelf-title\">Work</div><div class=\"ds-shelf-sub\">Album</div></a>",
+      "css": ".ds-shelf-card { display: block; width: 152px; color: inherit; text-decoration: none; font-family: var(--font, Satoshi, Helvetica Neue, Helvetica, Arial, sans-serif); } .ds-shelf-cover-wrap { position: relative; margin-bottom: 12px; } .ds-shelf-cover { width: 100%; aspect-ratio: 1; border-radius: 6px; background: var(--bg-elevated, #181818); box-shadow: 0 8px 24px rgb(0 0 0 / 50%); } .ds-shelf-card:hover .ds-shelf-cover, .ds-shelf-card:focus-visible .ds-shelf-cover { background: var(--bg-press, #2a2a2a); } .ds-shelf-play { position: absolute; right: 8px; bottom: 8px; display: grid; place-items: center; width: 48px; height: 48px; border-radius: 50%; background: var(--green, #1ed760); color: #0d0d0d; opacity: 0; transform: translateY(8px); transition: opacity 160ms var(--ease, cubic-bezier(0.3, 0, 0, 1)), transform 160ms var(--ease, cubic-bezier(0.3, 0, 0, 1)); } .ds-shelf-card:hover .ds-shelf-play, .ds-shelf-card:focus-visible .ds-shelf-play { opacity: 1; transform: translateY(0); } .ds-shelf-card:focus-visible { outline: 2px solid #fff; outline-offset: 3px; } .ds-shelf-title { font-size: 1rem; font-weight: 700; line-height: 1.4; } .ds-shelf-sub { color: var(--text-sub, #b3b3b3); font-size: 0.875rem; font-weight: 400; }"
+    },
+    {
+      "name": "Sidebar Link",
+      "kind": "nav",
+      "refersTo": "track-row",
+      "description": "Primary library link in the 280px pane.",
+      "html": "<a class=\"ds-nav-link is-on\" href=\"#\"><svg viewBox=\"0 0 24 24\" width=\"24\" height=\"24\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M4 10.5 12 4l8 6.5V20a1 1 0 0 1-1 1h-5v-6H10v6H5a1 1 0 0 1-1-1v-9.5Z\"/></svg><span>Home</span></a>",
+      "css": ".ds-nav-link { display: flex; gap: 16px; align-items: center; min-height: 40px; padding: 4px 12px; border-radius: 4px; color: var(--text-sub, #b3b3b3); font-family: var(--font, Satoshi, Helvetica Neue, Helvetica, Arial, sans-serif); font-size: 1rem; font-weight: 700; text-decoration: none; } .ds-nav-link:hover, .ds-nav-link.is-on { color: var(--text, #fff); } .ds-nav-link:focus-visible { outline: 2px solid #fff; outline-offset: 3px; }"
+    },
+    {
+      "name": "Topbar Round",
+      "kind": "button",
+      "refersTo": "topbar-round",
+      "description": "Back and Share circles on the sticky pane bar.",
+      "html": "<button class=\"ds-round\" type=\"button\" aria-label=\"Back\"><svg viewBox=\"0 0 24 24\" width=\"18\" height=\"18\" aria-hidden=\"true\"><path d=\"M15.5 5 8 12.5 15.5 20\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\"/></svg></button>",
+      "css": ".ds-round { display: grid; place-items: center; width: 32px; height: 32px; border: 0; border-radius: 50%; background: rgb(0 0 0 / 70%); color: #fff; cursor: pointer; } .ds-round:hover { color: #fff; } .ds-round:focus-visible { outline: 2px solid #fff; outline-offset: 3px; }"
+    },
+    {
+      "name": "Dock Play",
+      "kind": "button",
+      "refersTo": "dock-play",
+      "description": "White transport disc in the now-playing dock — not green.",
+      "html": "<button class=\"ds-dock-play\" type=\"button\" aria-label=\"Play\"><svg viewBox=\"0 0 24 24\" width=\"14\" height=\"14\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M8 5.14v13.72a1 1 0 0 0 1.5.86l11-6.86a1 1 0 0 0 0-1.72l-11-6.86a1 1 0 0 0-1.5.86Z\"/></svg></button>",
+      "css": ".ds-dock-play { display: grid; place-items: center; width: 32px; height: 32px; border: 0; border-radius: 50%; background: #fff; color: #0d0d0d; cursor: pointer; } .ds-dock-play:hover { transform: scale(1.04); } .ds-dock-play:focus-visible { outline: 2px solid #fff; outline-offset: 3px; }"
+    },
+    {
+      "name": "Contact Row",
+      "kind": "custom",
+      "refersTo": "contact-row",
+      "description": "Contact list row with a circular mark.",
+      "html": "<a class=\"ds-contact\" href=\"#\"><span class=\"ds-mark\"><svg viewBox=\"0 0 24 24\" width=\"18\" height=\"18\" aria-hidden=\"true\"><path fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" d=\"M4 7h16v10H4V7Zm0 0 8 6 8-6\"/></svg></span><span>Email</span></a>",
+      "css": ".ds-contact { display: grid; grid-template-columns: 40px 1fr; gap: 12px; align-items: center; min-height: 56px; padding: 0 8px; border-radius: 4px; color: #fff; font-family: var(--font, Satoshi, Helvetica Neue, Helvetica, Arial, sans-serif); font-size: 16px; font-weight: 400; text-decoration: none; } .ds-contact:hover { background: rgb(255 255 255 / 10%); } .ds-contact:focus-visible { outline: 2px solid #fff; outline-offset: 3px; } .ds-mark { display: grid; place-items: center; width: 40px; height: 40px; border-radius: 50%; background: #282828; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "A Catalog That Is a Life",
+    "overview": "This is a working Spotify artist surface, not a dark résumé with a green accent. The shell is void black; the reading panes are the familiar Spotify base; the color in the room is the photograph and the album art. Green is a verb. It starts Popular. It marks the track that is on. It does not decorate the page.\n\nThe type is compact self-hosted Satoshi. Interface copy lives between eleven and sixteen pixels. The only jump to display scale is a name — the artist on the hero, the record on a song or album page. Controls do real work: Play scrolls and starts Popular, Follow opens LinkedIn, Share sends this page, EN/ES sits in the sticky top bar. Depth is tonal (void / pane / elevated) plus the drop under a cover, not glass and not a hard offset shadow.",
+    "keyCharacteristics": [
+      "Black shell, pane surfaces, artwork as the chroma field",
+      "Green reserved for play and now-playing / active transport",
+      "Self-hosted Satoshi at 400 / 500 / 700 / 900; display is weight 900 only",
+      "Eight-pixel gaps and pane radii; four-pixel list covers; full pills; a 56px play disc",
+      "Listeners line is theatrical and marked (`staged` / `en escena`)"
+    ],
+    "rules": [
+      {
+        "name": "The Play-Green Rule",
+        "body": "Green is a control state, not a theme. If a surface is not playing, about to play, or actively on, it is not green.",
+        "section": "colors"
+      },
+      {
+        "name": "The Artwork-First Rule",
+        "body": "Chroma besides play green and verified blue comes from photographs and covers. Do not invent a third accent.",
+        "section": "colors"
+      },
+      {
+        "name": "The Name-Is-the-Display Rule",
+        "body": "Only an artist or record name may leave the 11–16px UI band. Section heads stay at title size; they do not compete with the name.",
+        "section": "typography"
+      },
+      {
+        "name": "The Staged Listeners Rule",
+        "body": "The listeners sentence keeps its theatrical mark — monthly listeners · staged / oyentes mensuales · en escena. Do not style that figure as a factual KPI.",
+        "section": "typography"
+      },
+      {
+        "name": "The Tonal Shell Rule",
+        "body": "New surfaces join void / pane / elevated / press. Do not add a shadow to a pane, a nav, or a row.",
+        "section": "elevation"
+      },
+      {
+        "name": "The Eight-and-Four Rule",
+        "body": "Gaps and pane radii are 8px. List covers are 4px. Pills are 999px. The green play disc is 56px. Do not invent a new radius for a new screen of this shell.",
+        "section": "shapes"
+      }
+    ],
+    "dos": [
+      "Do keep Play as the 56px green disc that starts Popular, and Follow as the white-stroke pill that opens LinkedIn.",
+      "Do put the artist name at display scale on the real photograph, with Popular and Contact in the first scroll.",
+      "Do draw icons as the authored SVG set (`app-icon`); one stroke weight, currentColor except the verified check.",
+      "Do keep the listeners line marked `staged` / `en escena`.",
+      "Do collapse at 900px to the mobile artist grammar: no sidebar, stacked band, mini-player, three tabs."
+    ],
+    "donts": [
+      "Don't wash a pane, hero, or section in play green. Green is the verb.",
+      "Don't substitute a system display face for Satoshi. The face is self-hosted; the stack is fallback, not the voice.",
+      "Don't introduce kickers as a reusable pattern. Section heads are the title size; they do not wear a label above.",
+      "Don't use hard-offset or zero-blur block shadows. Cover drops are soft and black only.",
+      "Don't use emoji or glyph dingbats as icons.",
+      "Don't present credentials as a résumé grid. Songs, albums, and playlists are the navigation model."
+    ]
+  }
+}

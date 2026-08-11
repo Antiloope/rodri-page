@@ -1,0 +1,43 @@
+# Docker is the supported local toolchain (no host Node/npm required).
+# See README.md and docs/TOOLING.md.
+
+services:
+  dev:
+    build:
+      context: .
+      target: deps
+    working_dir: /app
+    command: npx ng serve --host 0.0.0.0 --poll 2000
+    ports:
+      - "4200:4200"
+    volumes:
+      - .:/app
+      - /app/node_modules
+    environment:
+      NG_CLI_ANALYTICS: "false"
+
+  build:
+    build:
+      context: .
+      target: deps
+    working_dir: /app
+    environment:
+      NG_CLI_ANALYTICS: "false"
+      BASE_HREF: /rodri-page/
+    volumes:
+      - .:/app
+      - /app/node_modules
+    command:
+      - sh
+      - -c
+      - |
+        npx ng build --configuration production --base-href "$${BASE_HREF:-/rodri-page/}"
+        cp dist/rodri-page/browser/index.html dist/rodri-page/browser/404.html
+
+  preview:
+    image: nginx:1.27-alpine
+    ports:
+      - "8080:80"
+    volumes:
+      - ./dist/rodri-page/browser:/usr/share/nginx/html:ro
+      - ./nginx.conf:/etc/nginx/conf.d/default.conf:ro

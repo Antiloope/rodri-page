@@ -51,3 +51,5 @@ docker-compose.override.yml
 
 # Angular
 .angular
+.scaffold-angular
+.docker

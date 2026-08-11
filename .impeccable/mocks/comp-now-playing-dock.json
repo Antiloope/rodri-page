@@ -1,0 +1,7 @@
+{
+  "approved": false,
+  "id": "comp-now-playing-dock",
+  "title": "Now-playing dock",
+  "prompt": "Spotify Web grammar with shorter hero, full-width Popular, language chip in the top bar, taller now-playing dock as second hero. Progress uses year range.",
+  "path": ".impeccable/mocks/comp-now-playing-dock.png"
+}

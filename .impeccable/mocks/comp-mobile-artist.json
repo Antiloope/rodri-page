@@ -1,0 +1,7 @@
+{
+  "approved": false,
+  "id": "comp-mobile-artist",
+  "title": "Mobile artist, scaled",
+  "prompt": "Spotify Mobile artist profile scaled to desktop: circular photo, name under it, green Play pill, centered Popular list, discography shelf, mini player.",
+  "path": ".impeccable/mocks/comp-mobile-artist.png"
+}
