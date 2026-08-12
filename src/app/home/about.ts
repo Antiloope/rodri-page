@@ -43,6 +43,12 @@ import { copy } from '../data/copy';
       object-fit: cover;
       border-radius: 6px;
     }
+    .lead img {
+      object-position: 50% 18%;
+    }
+    .mosaic > img:first-of-type {
+      object-position: 18% 40%;
+    }
     figcaption {
       position: absolute;
       right: 0;

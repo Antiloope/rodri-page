@@ -56,6 +56,7 @@ import { copy } from '../data/copy';
   styles: `
     .hero {
       position: relative;
+      z-index: 0;
       min-height: 200px;
       overflow: hidden;
       color: #fff;
@@ -79,7 +80,7 @@ import { copy } from '../data/copy';
       background:
         linear-gradient(
           180deg,
-          rgb(0 0 0 / calc(0.1 + var(--fade, 0) * 0.55)) 10%,
+          rgb(0 0 0 / calc(0.04 + var(--fade, 0) * 0.55)) 0%,
           rgb(18 18 18 / calc(0.88 + var(--fade, 0) * 0.12)) 100%
         ),
         linear-gradient(90deg, rgb(0 0 0 / calc(0.42 + var(--fade, 0) * 0.35)) 0%, transparent 55%);
@@ -161,7 +162,7 @@ import { copy } from '../data/copy';
       }
       .veil {
         background:
-          linear-gradient(180deg, rgb(0 0 0 / 10%) 10%, rgb(18 18 18 / 88%) 100%),
+          linear-gradient(180deg, rgb(0 0 0 / 4%) 0%, rgb(18 18 18 / 88%) 100%),
           linear-gradient(90deg, rgb(0 0 0 / 42%) 0%, transparent 55%);
       }
     }

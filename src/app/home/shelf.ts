@@ -2,6 +2,8 @@ import { ChangeDetectionStrategy, Component, inject, input } from '@angular/core
 import { RouterLink } from '@angular/router';
 import { Icon } from '../core/icon';
 import { Language } from '../core/language';
+import { songsInAlbum } from '../data/catalog';
+import { copy } from '../data/copy';
 import { Album, Localized, Playlist } from '../data/types';
 
 @Component({
@@ -16,10 +18,16 @@ import { Album, Localized, Playlist } from '../data/types';
           <a class="shelf-card" [routerLink]="[kind() === 'album' ? '/album' : '/playlist', item.id]">
             <div class="shelf-cover-wrap">
               <img class="shelf-cover" [src]="item.image" [alt]="language.t(item.title)" />
-              <span class="shelf-play play-disc"><app-icon name="play" /></span>
+              @if (kind() === 'playlist' || hasTracks(item.id)) {
+                <span class="shelf-play play-disc"><app-icon name="play" /></span>
+              }
             </div>
             <div class="shelf-title">{{ language.t(item.title) }}</div>
-            <div class="shelf-sub">{{ language.t(item.subtitle) }}</div>
+            @if (kind() === 'playlist' && item.subtitle; as subtitle) {
+              <div class="shelf-sub">{{ language.t(subtitle) }}</div>
+            } @else if (kind() === 'album' && !hasTracks(item.id)) {
+              <div class="shelf-sub">{{ language.t(copy.comingSoon) }}</div>
+            }
           </a>
         }
       </div>
@@ -34,8 +42,13 @@ import { Album, Localized, Playlist } from '../data/types';
 })
 export class Shelf {
   protected readonly language = inject(Language);
+  protected readonly copy = copy;
   readonly id = input.required<string>();
   readonly title = input.required<Localized>();
   readonly kind = input.required<'album' | 'playlist'>();
   readonly items = input.required<readonly (Album | Playlist)[]>();
+
+  protected hasTracks(id: number): boolean {
+    return songsInAlbum(id).length > 0;
+  }
 }

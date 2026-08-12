@@ -17,15 +17,15 @@ import { Song } from '../data/types';
       <ol class="track-list">
         @for (song of songs; track song.id; let i = $index) {
           <li>
-            <div class="track-row" [class.is-current]="player.currentId() === song.id">
-              <button type="button" class="index" (click)="play(song)" [attr.aria-label]="language.t(copy.play)">
+            <a class="track-row" [class.is-current]="player.currentId() === song.id" [routerLink]="['/song', song.id]">
+              <button type="button" class="index" (click)="play($event, song)" [attr.aria-label]="language.t(copy.play)">
                 <span class="num">{{ i + 1 }}</span>
                 <app-icon class="hover-play" [name]="player.currentId() === song.id && player.playing() ? 'pause' : 'play'" />
               </button>
               <img class="track-cover" [src]="song.image" [alt]="language.t(song.name)" width="40" height="40" />
-              <a class="track-name" [routerLink]="['/song', song.id]">{{ language.t(song.name) }}</a>
+              <span class="track-name">{{ language.t(song.name) }}</span>
               <span class="track-meta">{{ language.t(song.duration) }}</span>
-            </div>
+            </a>
           </li>
         }
       </ol>
@@ -64,7 +64,9 @@ export class Popular {
   protected readonly copy = copy;
   protected readonly songs = popularSongs;
 
-  protected play(song: Song): void {
+  protected play(event: Event, song: Song): void {
+    event.preventDefault();
+    event.stopPropagation();
     if (this.player.currentId() === song.id) {
       this.player.toggle();
       return;

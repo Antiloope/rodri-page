@@ -2,6 +2,7 @@ import { ChangeDetectionStrategy, Component, computed, effect, inject, input } f
 import { Router, RouterLink } from '@angular/router';
 import { Language } from '../core/language';
 import { Player } from '../core/player';
+import { SheetPage } from '../core/sheet-page';
 import { albumById, songsInAlbum } from '../data/catalog';
 import { copy } from '../data/copy';
 import { Song } from '../data/types';
@@ -10,6 +11,7 @@ import { Song } from '../data/types';
   selector: 'app-album-page',
   changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [RouterLink],
+  hostDirectives: [SheetPage],
   template: `
     @if (album(); as record) {
       <article>
@@ -18,7 +20,9 @@ import { Song } from '../data/types';
           <div>
             <p>{{ language.t(copy.albums) }}</p>
             <h1>{{ language.t(record.title) }}</h1>
-            <p class="sub">{{ language.t(record.subtitle) }}</p>
+            @if (record.subtitle) {
+              <p class="sub">{{ language.t(record.subtitle) }}</p>
+            }
           </div>
         </header>
         @if (tracks().length === 0) {
@@ -27,12 +31,12 @@ import { Song } from '../data/types';
           <ol class="track-list">
             @for (song of tracks(); track song.id; let i = $index) {
               <li>
-                <div class="track-row" [class.is-current]="player.currentId() === song.id">
-                  <button type="button" class="track-index" (click)="play(song)">{{ i + 1 }}</button>
+                <a class="track-row" [class.is-current]="player.currentId() === song.id" [routerLink]="['/song', song.id]">
+                  <button type="button" class="track-index" (click)="play($event, song)">{{ i + 1 }}</button>
                   <img class="track-cover" [src]="song.image" [alt]="language.t(song.name)" />
-                  <a class="track-name" [routerLink]="['/song', song.id]">{{ language.t(song.name) }}</a>
+                  <span class="track-name">{{ language.t(song.name) }}</span>
                   <span class="track-meta">{{ language.t(song.duration) }}</span>
-                </div>
+                </a>
               </li>
             }
           </ol>
@@ -114,7 +118,9 @@ export class AlbumPage {
     return record ? songsInAlbum(record.id) : [];
   });
 
-  protected play(song: Song): void {
+  protected play(event: Event, song: Song): void {
+    event.preventDefault();
+    event.stopPropagation();
     this.player.play(song, this.tracks());
   }
 }

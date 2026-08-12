@@ -2,24 +2,19 @@ import { ChangeDetectionStrategy, Component, computed, inject, input } from '@an
 import { DomSanitizer } from '@angular/platform-browser';
 import { Router } from '@angular/router';
 import { Language } from '../core/language';
+import { SheetPage } from '../core/sheet-page';
 import { playlistById } from '../data/catalog';
 
 @Component({
   selector: 'app-playlist-page',
   changeDetection: ChangeDetectionStrategy.OnPush,
+  hostDirectives: [SheetPage],
   template: `
     @if (playlist(); as list) {
       <article>
-        <header>
-          <img [src]="list.image" [alt]="language.t(list.title)" />
-          <div>
-            <p>Playlist</p>
-            <h1>{{ language.t(list.title) }}</h1>
-          </div>
-        </header>
         <iframe
           [src]="embed()"
-          title="Spotify"
+          [title]="language.t(list.title)"
           allow="encrypted-media; autoplay; clipboard-write; fullscreen; picture-in-picture"
           loading="lazy"
         ></iframe>
@@ -28,36 +23,13 @@ import { playlistById } from '../data/catalog';
   `,
   styles: `
     article {
-      display: grid;
-      grid-template-rows: auto minmax(360px, 1fr);
+      display: flex;
+      flex-direction: column;
       min-height: calc(100dvh - 160px);
       padding: 8px 24px 24px;
     }
-    header {
-      display: flex;
-      gap: 20px;
-      align-items: end;
-      padding: 16px 0 24px;
-    }
-    header img {
-      width: 160px;
-      aspect-ratio: 1;
-      border-radius: 4px;
-      object-fit: cover;
-      box-shadow: 0 12px 32px rgb(0 0 0 / 50%);
-    }
-    header p {
-      margin: 0 0 6px;
-      font-size: 14px;
-      font-weight: 700;
-    }
-    h1 {
-      margin: 0;
-      font-size: clamp(2rem, 4vw, 3.5rem);
-      font-weight: 900;
-      letter-spacing: -0.04em;
-    }
     iframe {
+      flex: 1;
       width: 100%;
       min-height: 360px;
       border: 0;
@@ -66,13 +38,6 @@ import { playlistById } from '../data/catalog';
     @media (max-width: 700px) {
       article {
         padding: 8px 16px 16px;
-      }
-      header {
-        flex-direction: column;
-        align-items: start;
-      }
-      header img {
-        width: 120px;
       }
     }
   `,

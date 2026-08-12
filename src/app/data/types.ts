@@ -15,7 +15,7 @@ export interface Album {
   id: number;
   image: string;
   title: Localized;
-  subtitle: Localized;
+  subtitle?: Localized;
 }
 
 export interface Playlist {

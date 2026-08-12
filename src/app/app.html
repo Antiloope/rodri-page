@@ -26,11 +26,7 @@
 
   <main class="main" id="main">
     <app-topbar />
-    <div
-      class="stage"
-      [class.sheet-enter]="sheet.phase() === 'enter'"
-      [class.sheet-leave]="sheet.phase() === 'leave'"
-    >
+    <div class="stage">
       <router-outlet />
     </div>
   </main>

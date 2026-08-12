@@ -1,6 +1,15 @@
 import { Location } from '@angular/common';
-import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
-import { Router } from '@angular/router';
+import {
+  ChangeDetectionStrategy,
+  Component,
+  DestroyRef,
+  inject,
+  OnInit,
+  signal,
+} from '@angular/core';
+import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
+import { NavigationEnd, Router } from '@angular/router';
+import { filter, fromEvent } from 'rxjs';
 import { Actions } from '../core/actions';
 import { Icon } from '../core/icon';
 import { Language } from '../core/language';
@@ -12,6 +21,10 @@ import { copy } from '../data/copy';
   selector: 'app-topbar',
   changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [Icon],
+  host: {
+    '[class.is-home]': 'atHome()',
+    '[style.--solid]': 'solid()',
+  },
   template: `
     <div class="bar">
       <button class="round" type="button" (click)="back()" [attr.aria-label]="language.t(copy.back)">
@@ -30,16 +43,23 @@ import { copy } from '../data/copy';
     </div>
   `,
   styles: `
-    .bar {
+    :host {
+      display: block;
       position: sticky;
       top: 0;
       z-index: 5;
+    }
+    :host.is-home {
+      margin-bottom: calc(-1 * var(--topbar));
+    }
+    .bar {
       display: flex;
       align-items: center;
       justify-content: space-between;
       gap: 12px;
+      min-height: var(--topbar);
       padding: 12px 16px;
-      background: #121212;
+      background: rgb(18 18 18 / var(--solid, 1));
     }
     .end {
       display: flex;
@@ -96,7 +116,8 @@ import { copy } from '../data/copy';
     }
   `,
 })
-export class Topbar {
+export class Topbar implements OnInit {
+  private readonly destroyRef = inject(DestroyRef);
   private readonly location = inject(Location);
   private readonly router = inject(Router);
   private readonly scroll = inject(Scroll);
@@ -104,6 +125,25 @@ export class Topbar {
   protected readonly language = inject(Language);
   protected readonly actions = inject(Actions);
   protected readonly copy = copy;
+  protected readonly atHome = signal(!this.sheet.isDetail(this.router.url));
+  protected readonly solid = signal(this.sheet.isDetail(this.router.url) ? 1 : 0);
+
+  ngOnInit(): void {
+    this.sync();
+    this.router.events
+      .pipe(
+        filter((event) => event instanceof NavigationEnd),
+        takeUntilDestroyed(this.destroyRef),
+      )
+      .subscribe(() => this.sync());
+    const main = this.scroll.main();
+    if (!main) {
+      return;
+    }
+    fromEvent(main, 'scroll', { passive: true })
+      .pipe(takeUntilDestroyed(this.destroyRef))
+      .subscribe(() => this.sync());
+  }
 
   protected back(): void {
     if (this.sheet.isDetail(this.router.url)) {
@@ -111,5 +151,16 @@ export class Topbar {
       return;
     }
     void this.scroll.toTop();
+  }
+
+  private sync(): void {
+    const home = !this.sheet.isDetail(this.router.url);
+    this.atHome.set(home);
+    if (!home) {
+      this.solid.set(1);
+      return;
+    }
+    const top = this.scroll.main()?.scrollTop ?? 0;
+    this.solid.set(Math.min(1, Math.round((top / 80) * 100) / 100));
   }
 }

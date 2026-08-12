@@ -5,7 +5,6 @@ import { filter, map, startWith } from 'rxjs';
 import { copy } from './data/copy';
 import { Language } from './core/language';
 import { Scroll } from './core/scroll';
-import { Sheet } from './core/sheet';
 import { Toast } from './core/toast';
 import { Icon } from './core/icon';
 import { Topbar } from './shell/topbar';
@@ -23,7 +22,6 @@ export class App {
   private readonly toast = inject(Toast);
   private readonly scroll = inject(Scroll);
   private readonly router = inject(Router);
-  protected readonly sheet = inject(Sheet);
 
   protected readonly copy = copy;
   protected readonly message = this.toast.message;

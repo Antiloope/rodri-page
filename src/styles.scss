@@ -56,6 +56,7 @@
   --sidebar: 280px;
   --player: 72px;
   --tabs: 56px;
+  --topbar: 60px;
   --ease: cubic-bezier(0.3, 0, 0, 1);
   --type-artist: clamp(2.75rem, 7.2vw, 6rem);
   --type-section: 1.5rem;
@@ -336,6 +337,44 @@ img {
 #about,
 #contact {
   scroll-margin-top: 72px;
+}
+
+.sheet-page {
+  display: block;
+  animation: sheet-open 0.2s cubic-bezier(0, 0, 0.42, 1.02) both;
+}
+
+.sheet-page.is-leaving {
+  animation: sheet-close 0.2s cubic-bezier(0, 0, 0.42, 1.02) both;
+}
+
+@keyframes sheet-open {
+  from {
+    transform: translateY(12%);
+    opacity: 0.35;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes sheet-close {
+  from {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateY(12%);
+    opacity: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .sheet-page,
+  .sheet-page.is-leaving {
+    animation: none;
+  }
 }
 
 #popular.is-section-flash,

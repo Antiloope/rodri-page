@@ -43,24 +43,10 @@ export type IconName =
           <path d="M18.8 5.6v12.8l-8.6-6.4 8.6-6.4ZM6.2 5.6h2.3v12.8H6.2V5.6Z" />
         }
         @case ('shuffle') {
-          <path
-            fill="none"
-            stroke="currentColor"
-            stroke-width="1.7"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            d="M3 7h3.2c.7 0 1.3.3 1.7.9L16 17.2c.4.5 1 .8 1.7.8H21M16.8 7H21M18.6 5.2 21 7l-2.4 1.8M3 17h3.2c.7 0 1.3-.3 1.7-.9l1.4-1.9M16.8 17H21M18.6 15.2 21 17l-2.4 1.8"
-          />
+          <path d="M10.59 9.17 5.41 4 4 5.41l5.17 5.17 1.42-1.41Zm3.91-5.17 2.04 2.04L4 18.59 5.41 20 17.96 7.46 20 9.5V4h-5.5Zm.33 9.41-1.41 1.41 3.13 3.13L14.5 20H20v-5.5l-2.04 2.04-3.13-3.13Z" />
         }
         @case ('repeat') {
-          <path
-            fill="none"
-            stroke="currentColor"
-            stroke-width="1.7"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            d="M17 3.8 19.5 6 17 8.2M6.5 6H16a3 3 0 0 1 3 3v2.2M7 20.2 4.5 18 7 15.8M17.5 18H8a3 3 0 0 1-3-3v-2.2"
-          />
+          <path d="M7 7h10v3l4-4-4-4v3H5v6h2V7Zm10 10H7v-3l-4 4 4 4v-3h12v-6h-2v4Z" />
         }
         @case ('heart') {
           <path
@@ -202,8 +188,11 @@ export type IconName =
       display: block;
       width: 100%;
       height: 100%;
-      fill: currentColor;
       overflow: visible;
+    }
+    svg :where(path:not([fill])),
+    svg :where(circle:not([fill])) {
+      fill: currentColor;
     }
   `,
 })

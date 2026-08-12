@@ -180,8 +180,8 @@ import { copy } from '../data/copy';
       color: #fff;
     }
     .controls app-icon {
-      width: 16px;
-      height: 16px;
+      width: 20px;
+      height: 20px;
     }
     .play {
       width: 32px;
@@ -191,8 +191,9 @@ import { copy } from '../data/copy';
       color: #0d0d0d !important;
     }
     .play app-icon {
-      width: 14px;
-      height: 14px;
+      width: 16px;
+      height: 16px;
+      margin-left: 1px;
     }
     .timeline {
       display: grid;
