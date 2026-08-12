@@ -1,0 +1,1 @@
+import{L as h,M as ao,g as Lm,m as Kh}from"./main-OZ3VALP6.js";var o=class t{sheet=h(Lm);static ɵfac=function(e){return new(e||t)};static ɵdir=ao({type:t,selectors:[[``,`appSheetPage`,``]],hostAttrs:[1,`sheet-page`],hostVars:2,hostBindings:function(e,c){e&2&&Kh(`is-leaving`,c.sheet.phase()===`leave`)}})};export{o as t};
