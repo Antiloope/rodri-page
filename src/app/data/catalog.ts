@@ -33,6 +33,28 @@ export const songs: Song[] = [
     ],
   },
   {
+    id: 12,
+    albumId: 3,
+    name: ['Anotalo', 'Anotalo'],
+    image: 'assets/anotalo.png',
+    duration: ['2026 - today', '2026 - actualidad'],
+    description: [
+      '<p>Personal finance: a daily problem we couldn\'t solve with the tools that were out there.</p><p>With another partner I built <a href="https://anotalo.online" target="_blank" rel="noopener noreferrer"><b>Anotalo</b></a>, an app to log, understand and sort your money — and to help other people with the same thing.</p>',
+      '<p>Finanzas personales: un problema diario que no lográbamos resolver con las herramientas que había.</p><p>Con otro socio creamos <a href="https://anotalo.online" target="_blank" rel="noopener noreferrer"><b>Anotalo</b></a>, una app para anotar, entender y ordenar la plata — y para ayudar a otra gente con lo mismo.</p>',
+    ],
+  },
+  {
+    id: 11,
+    albumId: 3,
+    name: ['Diente Libre Sessions', 'Diente Libre Sessions'],
+    image: 'assets/diente-libre.png',
+    duration: ['2022 - 2023', '2022 - 2023'],
+    description: [
+      '<p>A beautiful run: Córdoba food and music in one thing.</p><p>With a partner I co-created and executive-produced <a href="https://www.youtube.com/@dientelibre" target="_blank" rel="noopener noreferrer"><b>Diente Libre Sessions</b></a>. We worked with great artists and a first-rate technical crew.</p><p>I learned to coordinate multi-disciplinary teams of more than 20 people for a common goal.</p>',
+      '<p>Una experiencia hermosa: combinamos la comida y la música de Córdoba en una sola cosa.</p><p>Con un socio fuimos creadores de la idea y productores ejecutivos de <a href="https://www.youtube.com/@dientelibre" target="_blank" rel="noopener noreferrer"><b>Diente Libre Sessions</b></a>. Trabajamos con artistas geniales y un equipo técnico de primera.</p><p>Aprendí a coordinar equipos multi diciplinarios de mas de 20 personas para un objetivo común.</p>',
+    ],
+  },
+  {
     id: 2,
     albumId: 3,
     name: ['ChordScript', 'ChordScript'],
@@ -41,6 +63,17 @@ export const songs: Song[] = [
     description: [
       '<p>Learning + music + programming. Mix those three passions and <a href="https://antiloope.github.io/ChordScriptPage/" target="_blank" rel="noopener noreferrer"><b>ChordScript</b></a> shows up.</p><p>It was my engineering thesis: a language and an IDE for programming music and sound. I designed a language meant for learning to program through music and for composing too (livecoding, algorithmic composition), and I wrote an interpreter and an environment in C++ so the code can play.</p>',
       '<p>Aprendizaje + música + programación. Si mezclás estas tres pasiones, aparece <a href="https://antiloope.github.io/ChordScriptPage/" target="_blank" rel="noopener noreferrer"><b>ChordScript</b></a>.</p><p>Fue mi tesis de ingeniería: un lenguaje y un IDE para programar música y sonoridades. Diseñé un lenguaje pensado para aprender a programar a través de la música y componer también (livecoding, algorithmic composition), y escribí en C++ un intérprete y un entorno para que el código suene.</p>',
+    ],
+  },
+  {
+    id: 10,
+    albumId: 1,
+    name: ['Diploma in Data Science', 'Diplomatura en ciencia de datos'],
+    image: 'assets/unc.png',
+    duration: ['2022', '2022'],
+    description: [
+      '<p>In 2022 I did the <a href="https://diplodatos.famaf.unc.edu.ar/" target="_blank" rel="noopener noreferrer"><b>Diploma in Data Science, Machine Learning and their Applications</b></a> at FAMAF, UNC.</p><p>A virtual program of about nine months: theory plus practice. Visualization, data curation, supervised and unsupervised learning, and a mentored project.</p>',
+      '<p>En 2022 hice la <a href="https://diplodatos.famaf.unc.edu.ar/" target="_blank" rel="noopener noreferrer"><b>Diplomatura en Ciencia de Datos, Aprendizaje Automático y sus Aplicaciones</b></a> en FAMAF, UNC.</p><p>Un programa virtual de unos nueve meses: fundamentos teóricos + práctica. Visualización, curación de datos, aprendizaje supervisado y no supervisado, y un proyecto de mentoría.</p>',
     ],
   },
   {
@@ -205,7 +238,7 @@ export const contacts: ContactLink[] = [
   },
 ];
 
-export const popularIds = [9, 1, 2, 3, 4] as const;
+export const popularIds = [12, 1, 9, 3, 11] as const;
 
 export const popularSongs = popularIds
   .map((id) => songs.find((song) => song.id === id))
