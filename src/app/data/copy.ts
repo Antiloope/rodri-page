@@ -23,7 +23,7 @@ export const copy = {
   language: ['Language', 'Idioma'] as Localized,
   openLinkedIn: ['Open LinkedIn', 'Abrir LinkedIn'] as Localized,
   aboutBody: [
-    'I was born in Córdoba, Argentina. Since childhood I like music and technology, and I took both passions hand in hand. At present, I\'m a computer engineering and I have listened a lot of music...',
-    'Nací en Córdoba, Argentina. Desde chico me gustó siempre la música y la tecnología, y fui llevando ambas pasiones de la mano. Actualmente soy ingeniero en computación y escuché mucha musica...',
+    'I was born in Córdoba, Argentina. Since childhood I\'ve always been passionate about music and technology, and I\'ve carried both passions hand in hand. Today I\'m a computer engineer — and along the way I\'ve listened to a lot of music. I\'m actively looking for projects that share my values, so I can channel all my passions into them.',
+    'Nací en Córdoba, Argentina. Desde chico me apasionó siempre la música y la tecnología, y fui llevando ambas pasiones de la mano. Hoy soy ingeniero en computación — y en el camino escuché mucha música. Estoy activamente buscando proyectos que empaticen con mis valores para canalizar todas mis pasiones en eso.',
   ] as Localized,
 } as const;

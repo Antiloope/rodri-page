@@ -21,13 +21,19 @@ import { copy } from '../data/copy';
   styles: `
     :host {
       display: block;
-      margin-top: 48px;
+      margin: 48px -24px 0;
+      padding: 0 24px;
+      background: #000;
     }
     .mosaic {
       display: grid;
-      grid-template-columns: minmax(0, 1.6fr) minmax(140px, 0.7fr);
+      width: 80%;
+      height: min(480px, 56vw);
+      margin-inline: auto;
+      grid-template-columns: minmax(0, 1.6fr) minmax(120px, 0.7fr);
       grid-template-rows: 1fr 1fr;
       gap: 8px;
+      background: #000;
     }
     .lead {
       position: relative;
@@ -55,15 +61,29 @@ import { copy } from '../data/copy';
       bottom: 0;
       left: 0;
       max-width: 72ch;
-      padding: 64px 16px 16px;
-      background: linear-gradient(180deg, transparent, rgb(0 0 0 / 82%));
-      color: #eaeaea;
+      padding: 88px 18px 18px;
+      background: linear-gradient(
+        180deg,
+        transparent 0%,
+        rgb(0 0 0 / 55%) 42%,
+        rgb(0 0 0 / 94%) 100%
+      );
+      color: #fff;
       font-size: 14px;
-      font-weight: 400;
-      line-height: 1.5;
+      font-weight: 500;
+      line-height: 1.55;
+      text-shadow: 0 1px 2px rgb(0 0 0 / 65%);
+    }
+    @media (max-width: 900px) {
+      :host {
+        margin-inline: -16px;
+        padding-inline: 16px;
+      }
     }
     @media (max-width: 700px) {
       .mosaic {
+        width: 88%;
+        height: min(420px, 108vw);
         grid-template-columns: 1fr;
         grid-template-rows: auto;
       }
@@ -72,6 +92,7 @@ import { copy } from '../data/copy';
       }
       figcaption {
         font-size: 13px;
+        padding: 96px 14px 14px;
       }
     }
   `,
